@@ -1,6 +1,8 @@
 # Infinite Mart
 
-## Hello guys
-### Siapa yang cita-citanya mao jadi titan
-### Risky = Gw mau jadi founding titan
-### Andika = Gw Collosal titan
+### Target Minggu ini
+### - Membuat Logo = Selesai
+### - Membuat Mockup = Selesai
+### - Membuat Banner = Selesai
+### - Membuat Maskot = Belum Selesai
+### - Implementasi 4 Mockup = Belum Selesai
