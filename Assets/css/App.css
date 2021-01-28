@@ -1,10 +1,8 @@
 :root {
-  --bgSeller-Welcome: linear-gradient(
-    131.38deg,
-    #9b43ca -4.2%,
-    #3c74ff 42.96%,
-    #6fdee7 103.63%
-  );
+  --bgSeller-Welcome: url("../img/Background/Seller/Bg.jpg");
+  --bgSeller-WelcomeTab: url("../img/Background/Seller/bgTab.jpg");
+  --bgSeller-WelcomePhone: url("../img/Background/Seller/bgPhone.jpg");
+  --bgSeller-WelcomeDesktop: url("../img/Background/Seller/bgDesk.jpg");
   --bgLogin-Register: linear-gradient(
     110.98deg,
     #9b43ca 0.31%,
@@ -17,4 +15,5 @@
   --webkitBackdropFilter: blur(4px);
   --borderRadiusLogin: 10px;
   --fontFamily: "Poppins", sans-serif;
+  --button-gradient: linear-gradient(95.62deg, #3c74ff -4.86%, #6fdee7 141.65%);
 }

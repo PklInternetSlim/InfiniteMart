@@ -1,0 +1,122 @@
+@import url("App.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background: var(--bgSeller-Welcome);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cardSeller {
+  margin-top: 10vh;
+  height: 450px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  color: #fff;
+}
+
+.sellerHeader {
+  margin-top: 50px;
+  font-family: "Poppins", serif;
+  font-size: 24px;
+}
+
+.anima1 {
+  user-select: none;
+  position: relative;
+  margin-top: -330px;
+  margin-left: 70px;
+  width: 348px;
+  height: 352px;
+}
+
+.btn-seller {
+  background: var(--button-gradient);
+  border-radius: 5px;
+  color: #fff;
+  font-family: "poppins", serif;
+}
+
+/* * Phone */
+@media (min-width: 0px) and (max-width: 765px) {
+  body {
+    background: var(--bgSeller-WelcomePhone);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .sellerHeader {
+    font-size: 20px;
+  }
+
+  .cardSeller {
+    border: 1px solid #fff;
+  }
+
+  .anima1 {
+    display: none;
+  }
+}
+
+/* * Desktop */
+@media (min-width: 1260px) {
+  body {
+    background: var(--bgSeller-WelcomeDesktop);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .sellerHeader {
+    margin-top: 90px;
+    font-family: "Poppins", serif;
+    font-size: 24px;
+  }
+
+  .cardSeller {
+    margin-top: 15vh;
+    height: 500px;
+  }
+}
+
+/* * Tab1 */
+@media (min-width: 768px) and (min-height: 1024px) {
+  body {
+    background: var(--bgSeller-WelcomeTab);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .cardSeller {
+    margin-top: 15vh;
+    height: 450px;
+  }
+
+  .anima1 {
+    user-select: none;
+    position: relative;
+    margin-top: -220px;
+    margin-left: -40px;
+    width: 248px;
+    height: 252px;
+  }
+}
+
+/* * Tab 2 */
+@media (min-width: 1024px) and (min-height: 1300px) {
+  .anima1 {
+    margin-top: -230px;
+    margin-left: 70px;
+    width: 248px;
+    height: 252px;
+  }
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .cardSeller {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
