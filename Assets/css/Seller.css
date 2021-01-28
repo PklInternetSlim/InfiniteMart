@@ -20,7 +20,7 @@ body {
 
 .sellerHeader {
   margin-top: 50px;
-  font-family: "Poppins", serif;
+  font-family: var(--fontFamily);
   font-size: 24px;
 }
 
@@ -37,7 +37,7 @@ body {
   background: var(--button-gradient);
   border-radius: 5px;
   color: #fff;
-  font-family: "poppins", serif;
+  font-family: var(--fontFamily);
 }
 
 /* * Phone */
@@ -71,7 +71,7 @@ body {
 
   .sellerHeader {
     margin-top: 90px;
-    font-family: "Poppins", serif;
+    font-family: var(--fontFamily);
     font-size: 24px;
   }
 
