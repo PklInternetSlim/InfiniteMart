@@ -42,7 +42,7 @@
                                                     value="+62" disabled>
                                             </div>
                                             <div class="col-9">
-                                                <input type="text" class="w-100 form-control form-control-sm">
+                                                <input type="text" class="w-100 form-control form-control-sm" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
                                             </div>
                                         </div>
                                     </div>
