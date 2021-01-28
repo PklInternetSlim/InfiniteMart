@@ -9,7 +9,7 @@
 ### - git add .
 ### - git commit -m "Tambahkan Pesan Sesuai Yang Di Rubah"
 ### - git push
-### - Setelah itu buka github compare & merge
+### - Setelah itu buka github compare & pull request
 
 ## Ingin mengambil perubahan yang ada di repository asli
 ### - git fetch upstream
