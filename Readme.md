@@ -1,9 +1,9 @@
 # Infinite Mart
 
-### Target Minggu ini
+## Target Minggu ini
 ### - Implementasi 4 Mockup = Belum Selesai
 
-### Kalau Ingin Mengumpulkan
+## Kalau Ingin Mengumpulkan
 ### - Fork Terlebih Dahulu
 ### - Buka git bash
 ### - git add .
@@ -11,6 +11,6 @@
 ### - git push
 ### - Setelah itu buka github compare & merge
 
-### Ingin mengambil perubahan yang ada di repository asli
+## Ingin mengambil perubahan yang ada di repository asli
 ### - git fetch upstream
 ### - git pull
