@@ -1,1 +1,22 @@
+:root {
+  --bgSeller-Welcome: linear-gradient(
+    131.38deg,
+    #9b43ca -4.2%,
+    #3c74ff 42.96%,
+    #6fdee7 103.63%
+  );
+  --bgLogin-Register: linear-gradient(
+    110.98deg,
+    #9b43ca 0.31%,
+    #3c74ff 47.99%,
+    #61c0ee 79.47%,
+    #6fdee7 91.86%
+  );
+  --boxShadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  --backdropFilter: blur(4px);
+  --webkitBackdropFilter: blur(4px);
+  --borderRadiusLogin: 10px;
+  --fontFamily: "Poppins", sans-serif;
+  );
+}
 /* * Css untuk Design Welcom */
