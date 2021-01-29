@@ -4,7 +4,13 @@
 body {
   margin: 0;
   padding: 0;
-  background: var(--bgRegister);
+  background-image: linear-gradient(
+    -87.98deg,
+    #9b43ca 0.31%,
+    #3c74ff 47.99%,
+    #61c0ee 79.47%,
+    #6fdee7 91.86%
+  );
   font-family: var(--fontFamily);
 }
 #login-box {
@@ -14,27 +20,26 @@ body {
   height: 79vh;
   width: 55%;
   background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
 }
 .left-box {
   position: absolute;
   top: 50%;
-  left: 30.1%;
+  left: 30%;
   transform: translate(-50%, -50%);
-  border: 1px solid rgb(104, 100, 100);
   box-sizing: border-box;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   background: white;
-  width: 280px;
-  height: 350px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  width: 40.25%;
+  height: 55vh;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 .left-box .img-left {
   position: absolute;
-  width: 50px;
-  height: 45px;
-  margin: 40px 35px;
+  width: 16.5%;
+  height: 12.5%;
+  margin: 40px 36px;
 }
 .left-box .username {
   position: absolute;
@@ -90,16 +95,19 @@ body {
   position: absolute;
   left: 14.75%;
   top: 80.8%;
-  width: 95px;
-  height: 35px;
+  width: 29.50%;
+  height: 7.5%;
   background: linear-gradient(95.62deg, #3c74ff -4.86%, #6fdee7 141.65%);
   color: white;
+  font-family: "Poppins", sans-serif;
+  font: outline;
   border-radius: 5px;
   cursor: pointer;
   border-style: hidden;
 }
 .left-box .sign-in:hover {
-  color: #282828;
+  color: #fff;
+  background: linear-gradient(95.62deg, #0000ff -4.86%, #00ffff 115.65%);
 }
 h1 {
   position: absolute;
@@ -128,6 +136,7 @@ h3 {
   width: 300px;
   height: auto;
   margin: 45px 50px;
+  font-style: normal;
   font-weight: bold;
   font-size: 15px;
   color: #e5e5e5;
@@ -137,7 +146,6 @@ h3 {
   top: 50%;
   right: 30.1%;
   transform: translate(50%, -50%);
-  border: 1px solid gray;
   box-sizing: border-box;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -148,10 +156,10 @@ h3 {
     #61c0ee 79.47%,
     #6fdee7 91.86%
   );
-  width: 280px;
-  height: 350px;
+  width: 40.25%;
+  height: 55vh;
   background-position: center;
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 .right-box .img-right {
   position: absolute;
@@ -161,10 +169,10 @@ h3 {
 }
 .right-box .sign-up {
   position: absolute;
-  left: 18.1%;
+  left: 16.8%;
   top: 23.8%;
-  width: 95px;
-  height: 35px;
+  width: 29.50%;
+  height: 7.5%;
   background: rgba(0, 0, 0, 0.25);
   color: white;
   font: outline;
@@ -172,7 +180,7 @@ h3 {
   border-style: hidden;
   cursor: pointer;
 }
-
 .right-box .sign-up:hover {
-  color: #000;
+  color: #fff;
+  background: #6495ed;
 }
