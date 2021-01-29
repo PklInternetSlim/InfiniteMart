@@ -1,0 +1,29 @@
+body{
+
+	background: linear-gradient(
+    131.38deg,
+    #9b43ca -4.2%,
+    #3c74ff 42.96%,
+    #6fdee7 103.63%);
+    height: 609px;
+
+}
+
+div h1{
+	color: white; 
+	font-family: 'Poppins', sans-serif;  
+	margin-left: 10%; 
+	font-size: 30px;
+}
+
+.box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(255, 255, 255, 0.3);
+	padding: 20px;
+	width: 550px;
+	height: 120px;
+	border-radius: 10px;
+}
