@@ -1,0 +1,138 @@
+@import url("Variable.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background: var(--bgSeller-Welcome);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cardWelcome {
+  margin-top: 28vh;
+  height: 220px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.cardWelcomeBody {
+  padding-left: 100px;
+  padding-top: 65px;
+  font-family: "Poppins", serif;
+  color: #fff;
+}
+
+.headWelcome {
+  font-size: 40px;
+}
+
+.subWelcome {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.subWelcome:hover {
+  color: #fff;
+}
+
+.imgWelcome {
+  user-select: none;
+  position: relative;
+  margin-top: -370px;
+  margin-left: 50px;
+  width: 263px;
+  height: 549px;
+}
+
+/* * Phone */
+@media (min-width: 0px) and (max-width: 765px) {
+  body {
+    background: var(--bgSeller-WelcomePhone);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .imgWelcome {
+    display: none;
+  }
+
+  .cardWelcome {
+    margin-top: 35vh;
+    height: 150px;
+    border: 1px solid #fff;
+  }
+
+  .cardWelcomeBody {
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+
+  .headWelcome {
+    font-size: 25px;
+  }
+
+  .subWelcome {
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+/* * Desktop */
+@media (min-width: 1260px) {
+  body {
+    background: var(--bgSeller-WelcomeDesktop);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+/* * Tab1 */
+@media (min-width: 768px) and (min-height: 1024px) {
+  body {
+    background: var(--bgSeller-WelcomeTab);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+/* * Tab 2 */
+@media (min-width: 1024px) and (min-height: 1300px) {
+  .anima1 {
+    margin-top: -230px;
+    margin-left: 70px;
+    width: 248px;
+    height: 252px;
+  }
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .cardSeller {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
+
+/* div h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-left: 10%;
+  font-size: 30px;
+} */
+
+/* .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  width: 550px;
+  height: 120px;
+  border-radius: 10px;
+} */
