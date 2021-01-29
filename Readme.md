@@ -5,9 +5,9 @@ infinite mart adalah aplikasi marketplace berbasis web yang memungkinkan user da
 ### Target Minggu ini
 Implementasi 4 Mockup
 - Login Page : Selesai
-- Seller Page : Selesai
+- Seller Page : Selesai && Responsive
 - Register Page
-- Welcome Page : Selesai
+- Welcome Page : Selesai && Responsive
 
 
 ### Kalau Ingin Mengumpulkan
@@ -21,3 +21,5 @@ Implementasi 4 Mockup
 ### jika Ingin mengambil perubahan yang ada di repository asli
 - git fetch upstream
 - git pull
+
+> Note : Buat Pagenya Responsive di semua device (laptop, Komputer, Handphone dan tablet)
