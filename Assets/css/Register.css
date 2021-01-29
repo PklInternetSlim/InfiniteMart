@@ -4,19 +4,27 @@
 body {
   margin: 0;
   padding: 0;
-  background: var(--bgRegister);
   font-family: var(--fontFamily);
+}
+
+.bgWindow {
+  background: var(--bgRegister);
+  width: 100%;
+  height: 100vh;
 }
 
 .autsideCard {
   border-radius: 10px;
-  margin: 5% auto;
-  height: 79vh;
+  height: 90vh;
   width: 55%;
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .insideCaard {
@@ -60,7 +68,6 @@ body {
   color: white;
   background: var(--btnSignUp);
   width: 95px;
-  height: 35px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -73,7 +80,7 @@ body {
 .leftCard img {
   width: 180px;
   height: 175px;
-  margin: 120px 0 0 0;
+  margin: 170px 0 0 0;
   transform: translateX(-85px);
 }
 
@@ -94,7 +101,7 @@ body {
 .img-left img {
   width: 50px;
   height: 45px;
-  margin: 20px 15px 0 20px;
+  margin: 20px 15px 0 0;
 }
 
 .text-right h1 {
@@ -119,4 +126,112 @@ body {
   font-size: 12px;
   padding: 5px;
   background: #61c0ee;
+}
+
+.inputValue label {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 5px;
+}
+
+/* * Phone */
+
+@media (min-width: 0px) and (max-width: 765px) {
+  .autsideCard {
+    width: 85%;
+  }
+
+  .leftCard img {
+    margin: 170px 0 0 0;
+  }
+}
+
+/* * Dekstop */
+
+@media (min-width: 1260px) {
+  .autsideCard {
+    width: 65%;
+    height: 90vh;
+  }
+
+  .insideCaard {
+    width: 600px;
+    height: 440px;
+  }
+
+  .leftCard img {
+    width: 200px;
+    height: 195px;
+    margin: 195px 0 0 0;
+    transform: translateX(-95px);
+  }
+
+  .btn-Gradient {
+    margin-top: 20px;
+  }
+}
+
+/* Tab1 */
+@media (min-width: 768px) and (min-height: 1024px) {
+  .autsideCard {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .insideCaard {
+    width: 860px;
+    height: 600px;
+  }
+
+  .leftCard img {
+    width: 240px;
+    height: 235px;
+    margin: 300px 0 0 0;
+    transform: translateX(-110px);
+  }
+
+  .leftCard h3 {
+    margin: 45px 50px 15px 50px;
+    font-size: 30px;
+  }
+
+  .btn-blueGradient {
+    width: 125px;
+    height: 45px;
+    margin-left: 13.1%;
+  }
+
+  .img-left img {
+    width: 60px;
+    height: 55px;
+    margin: 40px 15px 0 0;
+  }
+
+  .text-right h1 {
+    font-size: 25px;
+    margin: 55px 0 0 0;
+  }
+
+  .inputValue label {
+    font-size: 20px;
+  }
+
+  .inputValue input {
+    font-size: 20px;
+  }
+
+  .btn-Gradient {
+    width: 135px;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px 0;
+  }
+}
+
+/* * Tab 2 */
+@media (min-width: 1024px) and (min-height: 1300px) {
+  .autsideCard {
+    width: 100%;
+    height: 70vh;
+  }
 }
