@@ -3,14 +3,16 @@
 infinite mart adalah aplikasi marketplace berbasis web yang memungkinkan user dapat berbelanja ataupun menjual barang kapanpun dan dimanapun
 
 ### Target Minggu ini
+
 Implementasi 4 Mockup
+
 - Login Page : Selesai
 - Seller Page : Selesai && Responsive
-- Register Page
+- Register Page : Selesai && Responsive
 - Welcome Page : Selesai && Responsive
 
-
 ### Kalau Ingin Mengumpulkan
+
 - Fork Terlebih Dahulu
 - Buka git bash
 - git add .
@@ -19,6 +21,7 @@ Implementasi 4 Mockup
 - Setelah itu buka github compare & pull request
 
 ### jika Ingin mengambil perubahan yang ada di repository asli
+
 - git fetch upstream
 - git pull
 
