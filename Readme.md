@@ -7,7 +7,7 @@ Implementasi 4 Mockup
 - Login Page : Selesai
 - Seller Page : Selesai
 - Register Page
-- Welcome Page
+- Welcome Page : Selesai
 
 
 ### Kalau Ingin Mengumpulkan
