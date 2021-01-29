@@ -5,14 +5,8 @@
   --bgSeller-WelcomeTab: url("../img/Background/Seller/bgTab.jpg");
   --bgSeller-WelcomePhone: url("../img/Background/Seller/bgPhone.jpg");
   --bgSeller-WelcomeDesktop: url("../img/Background/Seller/bgDesk.jpg");
-  --bgLogin-Register: linear-gradient(
-    110.98deg,
-    #9b43ca 0.31%,
-    #3c74ff 47.99%,
-    #61c0ee 79.47%,
-    #6fdee7 91.86%
-  );
   --boxShadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  --btnRegister: rgba(0, 0, 0, 0.25);
   --backdropFilter: blur(4px);
   --webkitBackdropFilter: blur(4px);
   --borderRadiusLogin: 10px;
@@ -32,4 +26,11 @@
     #61c0ee 79.47%,
     #6fdee7 91.86%
   );
+  --bgWelcome: linear-gradient(
+    131.38deg,
+    #9b43ca -4.2%,
+    #3c74ff 42.96%,
+    #6fdee7 103.63%
+  );
+  --btnSignUp: linear-gradient(95.62deg, #3c74ff -4.86%, #6fdee7 141.65%);
 }

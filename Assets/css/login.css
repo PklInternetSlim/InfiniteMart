@@ -4,13 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(
-    -87.98deg,
-    #9b43ca 0.31%,
-    #3c74ff 47.99%,
-    #61c0ee 79.47%,
-    #6fdee7 91.86%
-  );
+  background: var(--bgRegister);
   font-family: var(--fontFamily);
 }
 #login-box {
@@ -97,11 +91,9 @@ body {
   left: 14.75%;
   top: 80.8%;
   width: 95px;
-  height: 24px;
+  height: 35px;
   background: linear-gradient(95.62deg, #3c74ff -4.86%, #6fdee7 141.65%);
   color: white;
-  font-family: "Poppins", sans-serif;
-  font: outline;
   border-radius: 5px;
   cursor: pointer;
   border-style: hidden;
@@ -136,7 +128,6 @@ h3 {
   width: 300px;
   height: auto;
   margin: 45px 50px;
-  font-style: normal;
   font-weight: bold;
   font-size: 15px;
   color: #e5e5e5;
@@ -173,7 +164,7 @@ h3 {
   left: 18.1%;
   top: 23.8%;
   width: 95px;
-  height: 24px;
+  height: 35px;
   background: rgba(0, 0, 0, 0.25);
   color: white;
   font: outline;

@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url(Variable.css);
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bgRegister);
+  font-family: var(--fontFamily);
+}
+
+.autsideCard {
+  border-radius: 10px;
+  margin: 5% auto;
+  height: 79vh;
+  width: 55%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insideCaard {
+  position: relative;
+  width: 560px;
+  height: 400px;
+  border-radius: 10px;
+  margin: 0 10%;
+}
+
+.leftCard {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(--bgRegister);
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.leftCard h3 {
+  height: auto;
+  margin: 45px 50px 15px 50px;
+  font-size: 15px;
+  color: #e5e5e5;
+}
+
+.btn-blueGradient {
+  color: white;
+  background: var(--btnRegister);
+  width: 95px;
+  height: 35px;
+  margin-left: 18.1%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-Gradient {
+  color: white;
+  background: var(--btnSignUp);
+  width: 95px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.leftCard .btn-blueGradient:hover {
+  color: #000;
+}
+
+.leftCard img {
+  width: 180px;
+  height: 175px;
+  margin: 120px 0 0 0;
+  transform: translateX(-85px);
+}
+
+.rightCard {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  border: 1px solid rgb(104, 100, 100);
+  border-left: none;
+}
+
+.img-left img {
+  width: 50px;
+  height: 45px;
+  margin: 20px 15px 0 20px;
+}
+
+.text-right h1 {
+  font-size: 17px;
+  color: #61c0ee;
+  margin: 35px 0 0 0;
+}
+
+.plus62 {
+  pointer-events: none;
+}
+
+.inputValue input {
+  border-style: hidden;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: var(--fontFamily);
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px;
+  background: #61c0ee;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <link rel='stylesheet' href='../Assets/css/bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" href="../Assets/css/Register.css">
+    <link rel="icon" href="../Assets/img/logo_transparent.png">
+</head>
+<body>
+    <div class="autsideCard">
+        <div class="insideCaard">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="leftCard">
+                        <h3 class="fw-bold">Have Account?</h3>
+                        <button type="submit" class="btn btn-blueGradient">Sign In</button>
+                        <img class="img-right" src="../Assets/img/Character/anima1.png">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="rightCard">
+                        <div class="header-rightCard">
+                            <div class="d-flex">
+                                <div class="img-left">
+                                    <img src="../Assets/img/logo_bg-putih.png" alt="">
+                                </div>
+                                <div class="text-right">
+                                    <h1 class="fw-bold">Sign Up</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-rightCard mt-3">
+                            <form action="#" method="POST">
+                                <div class="container">
+                                    <div class="inputValue">
+                                        <label for="email" style="  font-size: 12px; color: rgba(0, 0, 0, 0.5);">Email</label>
+                                        <input type="email" name="email" class="mt-2">
+                                    </div>
+                                    <div class="inputValue">
+                                        <label for="username" style="  font-size: 12px; color: rgba(0, 0, 0, 0.5);">Username</label>
+                                        <input type="text" name="username" class="mt-2">
+                                    </div>
+                                    <div class="inputValue">
+                                        <label for="password" style="  font-size: 12px; color: rgba(0, 0, 0, 0.5);">Password</label>
+                                        <input type="password" name="password" class="mt-2">
+                                    </div>
+                                    <div class="form-group inputValue">
+                                        <label for="" class="form-label small" style="font-size: 12px; color: rgba(0, 0, 0, 0.5);">No Telepon</label>
+                                        <div class="row g-3">
+                                            <div class="col-3">
+                                                <input type="text" class="w-100 form-control plus62 form-control-sm"
+                                                    value="+62">
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" class="w-100 form-control-sm" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="buttonValue mt-3">
+                                        <button type="submit" class="btn btn-Gradient" name="submit">Sign Up</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
