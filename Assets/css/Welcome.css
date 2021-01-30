@@ -52,9 +52,11 @@ body {
 /* * Phone */
 @media (min-width: 0px) and (max-width: 765px) {
   body {
-    background: var(--bgSeller-WelcomePhone);
+    background: none;
+    background-image: var(--bgSeller-WelcomePhone);
+    background-color: #6FDEE7;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
   }
 
   .imgWelcome {
@@ -117,22 +119,3 @@ body {
     backdrop-filter: blur(10px);
   }
 }
-
-/* div h1 {
-  color: white;
-  font-family: "Poppins", sans-serif;
-  margin-left: 10%;
-  font-size: 30px;
-} */
-
-/* .box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.3);
-  padding: 20px;
-  width: 550px;
-  height: 120px;
-  border-radius: 10px;
-} */

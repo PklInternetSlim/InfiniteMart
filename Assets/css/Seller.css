@@ -43,9 +43,11 @@ body {
 /* * Phone */
 @media (min-width: 0px) and (max-width: 765px) {
   body {
-    background: var(--bgSeller-WelcomePhone);
+    background: none;
+    background-image: var(--bgSeller-WelcomePhone);
+    background-color: #6FDEE7;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
   }
 
   .sellerHeader {
