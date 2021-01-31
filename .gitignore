@@ -1,2 +1,8 @@
 # .vscode
 .vscode/
+
+# Node
+/node_modules
+
+# Vendor
+/vendor

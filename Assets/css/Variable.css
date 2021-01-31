@@ -1,10 +1,13 @@
 /* * Letakan Semua Variable css disini */
 
 :root {
-  --bgSeller-Welcome: url("../img/Background/Seller/Bg.jpg");
-  --bgSeller-WelcomeTab: url("../img/Background/Seller/bgTab.jpg");
-  --bgSeller-WelcomePhone: url("../img/Background/Seller/bgPhone.jpg");
-  --bgSeller-WelcomeDesktop: url("../img/Background/Seller/bgDesk.jpg");
+  --bgSeller-Welcome: url("../img/Background/SellerWelcome/Bg.jpg");
+  --bgSeller-WelcomeTab: url("../img/Background/SellerWelcome/bgTab.jpg");
+  --bgSeller-WelcomePhone: url("../img/Background/SellerWelcome/bgPhone.jpg");
+  --bgSeller-WelcomeDesktop: url("../img/Background/SellerWelcome/bgDesk.jpg");
+  --bgLogin-Register: url("../img/Background/LoginRegister/bgDesk.jpg");
+  --bgLogin-RegisterTab: url("../img/Background/LoginRegister/bgTab.jpg");
+  --bgLogin-RegisterPhone: url("../img/Background/LoginRegister/bgPhone.jpg");
   --boxShadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   --btnRegister: rgba(0, 0, 0, 0.25);
   --backdropFilter: blur(4px);
