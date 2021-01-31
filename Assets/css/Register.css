@@ -96,6 +96,7 @@ body {
   z-index: 2;
   border: 1px solid rgb(104, 100, 100);
   border-left: none;
+  background: #fff;
 }
 
 .img-left img {
@@ -174,8 +175,8 @@ body {
 /* Tab1 */
 @media (min-width: 768px) and (min-height: 1024px) {
   .autsideCard {
-    width: 90%;
-    height: 70vh;
+    width: 100%;
+    height: 0vh;
   }
 
   .insideCaard {
@@ -226,13 +227,24 @@ body {
     margin-top: 20px;
     padding: 10px 0;
   }
+
+  .leftCard {
+    display: none;
+  }
+
+  .rightCard {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+  }
 }
 
 /* * Tab 2 */
 @media (min-width: 1024px) and (min-height: 1300px) {
   .autsideCard {
     width: 90%;
-    height: 70vh;
+    height: 0vh;
   }
 
   .img-left img {
