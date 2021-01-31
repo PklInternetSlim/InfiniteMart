@@ -116,7 +116,7 @@ body {
 
 .inputValue input {
   border-style: hidden;
-  color: white;
+  color: #282828;
   outline: none;
   border: none;
   cursor: pointer;
@@ -125,7 +125,7 @@ body {
   border-radius: 5px;
   font-size: 12px;
   padding: 5px;
-  background: #61c0ee;
+  background: #f5f5f5;
 }
 
 .inputValue label {
@@ -174,7 +174,7 @@ body {
 /* Tab1 */
 @media (min-width: 768px) and (min-height: 1024px) {
   .autsideCard {
-    width: 100%;
+    width: 90%;
     height: 70vh;
   }
 
@@ -231,7 +231,18 @@ body {
 /* * Tab 2 */
 @media (min-width: 1024px) and (min-height: 1300px) {
   .autsideCard {
-    width: 100%;
+    width: 90%;
     height: 70vh;
+  }
+
+  .img-left img {
+    width: 70px;
+    height: 65px;
+  }
+
+  .text-right h1 {
+    font-size: 27px;
+    color: #61c0ee;
+    margin: 60px 0 0 0;
   }
 }
