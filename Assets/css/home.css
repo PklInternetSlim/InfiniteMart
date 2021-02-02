@@ -1,9 +1,13 @@
 @import url("Variable.css");
 
+body {
+  overflow-x: hidden;
+  font-family: var(--fontFamily);
+}
+
 .navbar-home {
   width: 100vw;
   height: 70px;
-  background-color: #3c74ff;
 }
 
 .wrap {
@@ -66,6 +70,191 @@ span.category {
   color: #d6e2eb;
 }
 
+.navbar-brand img {
+  width: 5vw;
+  height: 10vh;
+}
+
+.headerCarousel {
+  width: 100%;
+  height: 30vh;
+  border-radius: 10px;
+  background: var(--bgWelcome);
+}
+
+.slideOne,
+.slideTwo,
+.slideThree {
+  border-radius: 15px;
+  opacity: 0.6;
+  background: grey;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slideOne {
+  width: 5vw;
+  height: 2.5vh;
+}
+
+.slideTwo,
+.slideThree {
+  width: 2.5vw;
+  height: 2.5vh;
+}
+
+.cardInfoSale {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.cardGift {
+  width: 100%;
+  height: 30vh;
+  background: var(--bgGift);
+}
+
+.flasSale {
+  width: 100%;
+  padding: 20px 0;
+  background: var(--bgWelcome);
+}
+
+.timeHour-Flash,
+.timeMinute-Flash,
+.timeSecond-Flash {
+  width: 2.5vw;
+  height: 5vh;
+  background: #fff;
+  margin: 0 10px;
+}
+
+.positionFlash-time {
+  margin-left: 20px;
+}
+
+.cardInfo-Barang {
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.topCard-Barang img {
+  width: 10vw;
+  height: 30vh;
+}
+
+.setDiskon-Flash span:nth-child(1) {
+  text-decoration: line-through;
+  color: #c4c4c4;
+  opacity: 0.5;
+}
+
+.setDiskon-Flash span {
+  font-size: 15px;
+}
+
+.lineSucces-Flash {
+  position: relative;
+  width: 10vw;
+  height: 3px;
+  border-radius: 10px;
+  background: #c4c4c4;
+  opacity: 0.5;
+}
+
+.lineSucces-Flash:after {
+  content: "";
+  width: 75%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  border-radius: 10px;
+  top: 0;
+  background: #0dd409;
+}
+
+.btnSlide-Left,
+.btnSlide-Right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.btnSlide-Left {
+  left: -5%;
+}
+
+.btnSlide-Right {
+  right: -5%;
+}
+
+.StokTersedia {
+  font-size: 13px;
+  color: #c4c4c4;
+}
+
+.cardFlex-Three {
+  width: 100%;
+  height: 20vh;
+  border-radius: 15px;
+  background: #004970;
+}
+
+.cardInfo-Location {
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  height: 25vh;
+}
+
+.cardInfo-Location img {
+  width: 20vw;
+  height: 35vh;
+}
+
+.sellerCard-Barang {
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.topImg-seller img {
+  width: 100%;
+}
+
+.btnSelengkapnya img {
+  width: 12.5px;
+  height: 12.5px;
+}
+
+.btn-Selengkapnya {
+  width: 250px;
+  height: 50px;
+  padding: 10px;
+  background: #0e538c;
+}
+
+.Footer {
+  width: 100%;
+  background: #01384f;
+}
+
+.social-mediaIcon img {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.GoodleApp-Store {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
 /*
 
 .kategori {
@@ -90,4 +279,4 @@ span.category {
 
 .btnWrap {
   margin-left: 2vw;
-} */
+} */ ;
