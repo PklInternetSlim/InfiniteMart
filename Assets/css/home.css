@@ -1,0 +1,93 @@
+@import url("Variable.css");
+
+.navbar-home {
+  width: 100vw;
+  height: 70px;
+  background-color: #3c74ff;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+}
+
+.searchBarWrap {
+  height: 50px;
+  background: linear-gradient(
+    110.98deg,
+    #9b43ca 0.31%,
+    #3c74ff 47.99%,
+    #61c0ee 79.47%,
+    #6fdee7 91.86%
+  );
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.searchBar {
+  width: 85%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  padding: 5px 20px;
+  font-family: var(--fontFamily);
+}
+
+.searchBar::placeholder {
+  color: #fff;
+}
+
+.searchBar:focus {
+  color: #282828;
+}
+
+span.category {
+  font-family: var(--fontFamily);
+  font-size: 20px;
+  color: #282828;
+  font-weight: bold;
+}
+
+.btn-login {
+  width: 35%;
+  background-color: #d6e2eb;
+  font-weight: 500;
+  font-family: var(--fontFamily);
+  color: #0e538c;
+}
+
+.btn-signup {
+  width: 35%;
+  background-color: #0e538c;
+  font-weight: 500;
+  font-family: var(--fontFamily);
+  color: #d6e2eb;
+}
+
+/*
+
+.kategori {
+  align-items: center;
+  height: 100%;
+  display: flex;
+  margin-left: 1.5rem;
+}
+
+.kategori span {
+  font-family: var(--fontFamily);
+  font-size: 20px;
+  color: #282828;
+  font-weight: bold;
+}
+
+.wrapSearch {
+  width: 50%;
+  justify-content: center;
+  display: flex;
+}
+
+.btnWrap {
+  margin-left: 2vw;
+} */
