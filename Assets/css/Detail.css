@@ -272,6 +272,41 @@ span.category {
   background: #0e538c;
 }
 
+.setDiskon-Flash span:nth-child(1) {
+  text-decoration: line-through;
+  color: #c4c4c4;
+  opacity: 0.7;
+}
+
+.setDiskon-Flash span {
+  font-size: 15px;
+}
+
+.lineSucces-Flash {
+  position: relative;
+  width: 10vw;
+  height: 3px;
+  border-radius: 10px;
+  background: #c4c4c4;
+  opacity: 0.5;
+}
+
+.lineSucces-Flash:after {
+  content: "";
+  width: 75%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  border-radius: 10px;
+  top: 0;
+  background: #0dd409;
+}
+
+.StokTersedia {
+  font-size: 13px;
+  color: #c4c4c4;
+}
+
 .Footer {
   width: 100vw;
   background: #01384f;
