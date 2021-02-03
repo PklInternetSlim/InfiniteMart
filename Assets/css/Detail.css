@@ -195,6 +195,15 @@ span.category {
   margin: 0;
 }
 
+.img-chat-user {
+  width: 80px;
+  height: 80px;
+}
+
+.chatUser {
+  margin-bottom: 2rem;
+}
+
 /* Side Right */
 
 .cardToko,
@@ -235,7 +244,7 @@ span.category {
 
 .topImg-MoreStuff img {
   width: 100%;
-  height: 35vh;
+  height: 55vh;
 }
 
 /* End  */
@@ -331,6 +340,19 @@ span.category {
   .category {
     display: none;
   }
+
+  .DetailImg-Barang img {
+    width: 50vw;
+    height: 55vh;
+  }
+
+  .lineVerical {
+    display: none;
+  }
+
+  .cardPenilaianProduk {
+    margin-bottom: 2rem;
+  }
 }
 
 /* * Tab1 */
@@ -360,5 +382,24 @@ span.category {
 
   .category {
     display: none;
+  }
+
+  .leftSpesifikasi,
+  .rightSpesifikasi {
+    width: 100%;
+  }
+
+  .lineVerical {
+    display: none;
+  }
+
+  .DetailImg-Barang img {
+    width: 30vw;
+    height: 35vh;
+  }
+
+  .topImg-MoreStuff img {
+    width: 100%;
+    height: 20vh;
   }
 }
