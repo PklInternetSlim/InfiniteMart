@@ -2,86 +2,99 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel='stylesheet' href='../Assets/css/bootstrap.min.css'>
-    <link rel="stylesheet" type="text/css" href="../Assets/css/Register.css">
     <link rel="icon" href="../Assets/img/logo_transparent.png">
+    <link rel='stylesheet' href='../Assets/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="../Assets/css/Register.css">
 </head>
 
 <body>
+    <div class="loginContainer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card-login">
+                        <div class="row">
 
-    <div class="bgWindow">
-        <div class="autsideCard">
-            <div class="insideCaard">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="leftCard">
-                            <h3 class="fw-bold">Have Account?</h3>
-                            <a href="Login.html" class="btn btn-blueGradient">Sign Up</a>
-                            <img class="img-right user-select-none" src="../Assets/img/Character/anima1.png">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="rightCard">
-                            <div class="header-rightCard">
-                                <div class="container">
-                                    <div class="d-flex">
-                                        <div class="img-left">
-                                            <img src="../Assets/img/logo_bg-putih.png" alt="">
-                                        </div>
-                                        <div class="text-right">
-                                            <h1 class="fw-bold">Sign Up</h1>
+                            <div class="col-md-6 right">
+                                <div class="rightCard">
+                                    <div class="container">
+                                        <div class="row">
+                                            <span class="regist-account mt-5">
+                                                Have account?
+                                            </span>
+                                            <a href="Register.html" class="btn btn-blueGradient m-3">Sign Up</a>
                                         </div>
                                     </div>
                                 </div>
+                                <img class="anima2 user-select-none" src="../Assets/img/Character/anima1.png">
                             </div>
-                            <div class="content-rightCard mt-3">
-                                <form action="#" method="POST">
-                                    <div class="container">
-                                        <div class="inputValue">
-                                            <label for="email">Email</label>
-                                            <input type="email" name="email" class="mt-2 form-control"
-                                                autocomplete="off">
-                                        </div>
-                                        <div class="inputValue">
-                                            <label for="username">Username</label>
-                                            <input type="text" name="username" class="mt-2 form-control"
-                                                autocomplete="off">
-                                        </div>
-                                        <div class="inputValue">
-                                            <label for="password">Password</label>
-                                            <input type="password" name="password" class="mt-2 form-control"
-                                                autocomplete="off">
-                                        </div>
-                                        <div class="form-group inputValue">
-                                            <label for="" class="form-label small">No Telepon</label>
-                                            <div class="row g-3">
-                                                <div class="col-3 fontSize">
-                                                    <input type="text" class="w-100 form-control plus62 form-control-sm"
-                                                        value="+62">
-                                                </div>
-                                                <div class="col-9">
-                                                    <input type="text" class="w-100 form-control" autocomplete="off"
-                                                        onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
-                                                </div>
+
+                            <div class="col-md-6 left">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="d-flex">
+                                            <div class="img-left">
+                                                <img src="../Assets/img/logo_bg-putih.png" alt="">
+                                            </div>
+                                            <div class="text-right">
+                                                <h1 class="fw-bold">Sign Up</h1>
                                             </div>
                                         </div>
-                                        <div class="buttonValue mt-3">
-                                            <button type="submit" class="btn btn-Gradient" name="submit">Sign
-                                                Up</button>
-                                        </div>
                                     </div>
-                                </form>
+                                    <div class="row mt-3">
+                                        <form action="#" method="POST">
+                                            <div class="inputValue">
+                                                <label for="email">Email</label>
+                                                <input type="email" name="email" class="mt-2 form-control" autofocus
+                                                    autocomplete="off">
+                                            </div>
+                                            <div class="inputValue">
+                                                <label for="username">Username</label>
+                                                <input type="text" name="username" class="mt-2 form-control" autofocus
+                                                    autocomplete="off">
+                                            </div>
+                                            <div class="inputValue mt-3">
+                                                <label for="password">Password</label>
+                                                <input type="password" name="password" class="mt-2 form-control"
+                                                    autocomplete="off">
+                                            </div>
+                                            <div class="inputValue">
+                                                <label for="PhoneNumber">Phone Number</label>
+                                                <div class="row g-3">
+                                                    <div class="col-3">
+                                                        <input type="text" class="text-center mt-2 w-100 form-control bg-white"
+                                                            value="+62" disabled>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input type="text" name="PhoneNumber" class="mt-2 w-100 form-control" autocomplete="off"
+                                                            onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="buttonValue mt-3">
+                                                <button type="submit" class="btn btn-Gradient" name="submit">Sign
+                                                    Up</button>
+                                            </div>
+                                        </form>
+                                        <a href="#" class="toRegist">Dont have account? Sign up</a>
+                                    </div>
+                                </div>
                             </div>
+                        
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-    <script src='../Assets/Js/popper.min.js'></script>
-    <script src="../Assets/Js/bootstrap.min.js"></script>
 </body>
+
+<script src='../Assets/Js/popper.min.js'></script>
+<script src="../Assets/Js/bootstrap.min.js"></script>
+<script>
+</script>
 
 </html>

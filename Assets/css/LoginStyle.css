@@ -3,11 +3,11 @@
 
 body {
   background: #eafafc;
+  overflow: hidden;
 }
 
 .card-login {
-  margin-top: 7vh;
-  height: auto;
+  margin: 7vh auto;
   min-height: 450px;
   border-radius: 15px;
   background-color: #fff;
@@ -89,6 +89,10 @@ body {
 
 /* * Phone */
 @media (min-width: 0px) and (max-width: 765px) {
+  .card-login {
+    margin: 3vh auto;
+  }
+
   .right {
     display: none;
   }
@@ -116,18 +120,93 @@ body {
 /* * Tab1 */
 @media (min-width: 768px) and (min-height: 1024px) {
   .card-login {
-    margin-top: 35vh;
+    margin-top: 30vh;
     width: 100%;
-    margin-left: 10rem;
+    min-height: 0;
+    padding-bottom: 5%;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .btn-Gradient {
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .toRegist {
+    display: block;
+    font-size: 20px;
+  }
+
+  .img-left img {
+    width: 70px;
+    height: 65px;
+  }
+
+  .text-right h1 {
+    font-size: 28px;
+    margin: 40px 0 0 0;
+  }
+
+  .signIn-google h1 {
+    font-size: 25px;
+  }
+
+  .inputValue label {
+    font-size: 25px;
+  }
+
+  .inputValue input {
+    font-size: 25px;
   }
 }
 
 /* * Tab 2 */
 @media (min-width: 1024px) and (min-height: 1300px) {
-  .anima1 {
-    margin-top: -230px;
-    margin-left: 70px;
-    width: 248px;
-    height: 252px;
+  .card-login {
+    margin-top: 15vh;
+    width: 100%;
+    min-height: 0;
+    padding-bottom: 5%;
+  }
+
+  .btn-Gradient {
+    font-size: 35px;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .toRegist {
+    font-size: 25px;
+  }
+
+  .img-left img {
+    width: 90px;
+    height: 85px;
+  }
+
+  .text-right h1 {
+    font-size: 38px;
+    margin: 40px 0 0 0;
+  }
+
+  .signIn-google h1 {
+    font-size: 35px;
+  }
+
+  .inputValue label {
+    font-size: 35px;
+  }
+
+  .inputValue input {
+    font-size: 35px;
   }
 }

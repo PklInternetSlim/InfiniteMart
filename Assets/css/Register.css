@@ -1,109 +1,59 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url(Variable.css);
+@import url("Variable.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-  background: var(--bgLogin-Register);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-  font-family: var(--fontFamily);
+  background: #eafafc;
+  overflow: hidden;
 }
 
-.bgWindow {
-  width: 100%;
-  height: 100vh;
+.card-login {
+  margin: 7vh auto;
+  min-height: 450px;
+  border-radius: 15px;
+  background-color: #fff;
+  color: #282828;
+  -webkit-box-shadow: 2px 2px 6px 2px rgba(51, 51, 51, 0.2);
+  box-shadow: 2px 2px 6px 2px rgba(51, 51, 51, 0.2);
 }
 
-.autsideCard {
-  border-radius: 10px;
-  height: 90vh;
-  width: 55%;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.insideCaard {
-  position: relative;
-  width: 560px;
-  height: 400px;
-  border-radius: 10px;
-  margin: 0 10%;
-}
-
-.leftCard {
-  position: absolute;
-  left: 0;
-  top: 0;
+.rightCard {
   background: var(--bgLogin-RegisterTab);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 50%;
-  height: 100%;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  height: auto;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  min-height: 450px;
 }
 
-.leftCard h3 {
-  height: auto;
-  margin: 45px 50px 15px 50px;
-  font-size: 15px;
-  color: #e5e5e5;
+.regist-account {
+  font-weight: 500;
+  font-family: var(--fontFamily);
+  font-size: 20px;
+  color: #fff;
 }
 
 .btn-blueGradient {
   color: white;
   background: var(--btnRegister);
   width: 95px;
-  height: 35px;
-  margin-left: 18.1%;
   border-radius: 5px;
-  border: none;
-  cursor: pointer;
 }
 
-.btn-Gradient {
-  color: white;
-  background: var(--button-gradient);
+.sellerHeader {
+  margin-top: 50px;
   font-family: var(--fontFamily);
-  width: 95px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
+  font-size: 24px;
 }
 
-.leftCard .btn-blueGradient:hover {
-  color: #000;
-}
-
-.leftCard img {
-  width: 180px;
-  height: 175px;
-  margin: 170px 0 0 0;
-  transform: translateX(-85px);
-}
-
-.rightCard {
+.anima2 {
+  user-select: none;
   position: absolute;
-  right: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-  z-index: 2;
-  border: 1px solid rgb(104, 100, 100);
-  border-left: none;
-  background: #fff;
+  margin-top: -9rem;
+  margin-left: -7.5rem;
+  width: 250px;
+  height: 208px;
 }
 
 .img-left img {
@@ -118,144 +68,73 @@ body {
   margin: 35px 0 0 0;
 }
 
-.plus62 {
-  pointer-events: none;
-}
-
-.inputValue input {
-  border-style: hidden;
-  color: #282828;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  font-size: var(--fontFamily);
+.btn-Gradient {
+  background: var(--button-gradient);
   border-radius: 5px;
-  font-size: 12px;
-  padding: 5px;
-  background: #f5f5f5;
+  color: #fff;
+  font-family: var(--fontFamily);
 }
 
-.inputValue label {
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.5);
-  margin-top: 5px;
-}
-
-.fontSize input {
+.toRegist {
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: 10px;
   text-align: center;
+  display: none;
 }
 
 /* * Phone */
-
 @media (min-width: 0px) and (max-width: 765px) {
-  .autsideCard {
-    width: 85%;
+  .card-login {
+    margin: 3vh auto;
+    padding-bottom: 5%;
   }
 
-  .leftCard img {
-    margin: 170px 0 0 0;
-  }
-}
-
-/* * Dekstop */
-
-@media (min-width: 1260px) {
-  .autsideCard {
-    width: 65%;
-    height: 90vh;
-  }
-
-  .insideCaard {
-    width: 600px;
-    height: 440px;
-  }
-
-  .leftCard img {
-    width: 200px;
-    height: 195px;
-    margin: 195px 0 0 0;
-    transform: translateX(-95px);
-  }
-
-  .btn-Gradient {
-    margin-top: 20px;
-  }
-}
-
-/* Tab1 */
-@media (min-width: 768px) and (min-height: 1024px) {
-  .autsideCard {
-    width: 100%;
-    height: 0vh;
-  }
-
-  .insideCaard {
-    width: 860px;
-    height: 600px;
-  }
-
-  .leftCard img {
-    width: 240px;
-    height: 235px;
-    margin: 300px 0 0 0;
-    transform: translateX(-110px);
-  }
-
-  .leftCard h3 {
-    margin: 45px 50px 15px 50px;
-    font-size: 30px;
-  }
-
-  .btn-blueGradient {
-    width: 125px;
-    height: 45px;
-    margin-left: 13.1%;
-  }
-
-  .img-left img {
-    width: 60px;
-    height: 55px;
-    margin: 40px 15px 0 0;
-  }
-
-  .text-right h1 {
-    font-size: 25px;
-    margin: 55px 0 0 0;
-  }
-
-  .inputValue label {
-    font-size: 20px;
-  }
-
-  .inputValue input {
-    font-size: 20px;
-  }
-
-  .btn-Gradient {
-    width: 135px;
-    font-size: 20px;
-    margin-top: 20px;
-    padding: 10px 0;
-  }
-
-  .leftCard {
+  .right {
     display: none;
   }
 
-  .rightCard {
+  .btn-Gradient {
     width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 10px;
+  }
+
+  .toRegist {
+    display: block;
   }
 }
 
-/* * Tab 2 */
-@media (min-width: 1024px) and (min-height: 1300px) {
-  .autsideCard {
-    width: 90%;
-    height: 0vh;
+/* * Desktop */
+@media (min-width: 1260px) {
+  .card-login {
+    margin-top: 15vh;
+  }
+}
+
+/* * Tab1 */
+@media (min-width: 768px) and (min-height: 1024px) {
+  .card-login {
+    margin-top: 20vh;
+    width: 100%;
+    min-height: 0;
+    padding-bottom: 5%;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .btn-Gradient {
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .toRegist {
+    display: block;
+    font-size: 20px;
   }
 
   .img-left img {
@@ -264,51 +143,55 @@ body {
   }
 
   .text-right h1 {
-    font-size: 27px;
-    color: #61c0ee;
-    margin: 60px 0 0 0;
+    font-size: 28px;
+    margin: 40px 0 0 0;
+  }
+
+  .inputValue label {
+    font-size: 25px;
+  }
+
+  .inputValue input {
+    font-size: 25px;
   }
 }
 
-/* Galaxy j4 */
+/* * Tab 2 */
+@media (min-width: 1024px) and (min-height: 1300px) {
+  .card-login {
+    margin-top: 10vh;
+    width: 100%;
+    min-height: 0;
+    padding-bottom: 5%;
+  }
 
-/* @media (min-width: 290px) and (min-width: 610px) {
-  .insideCaard {
-    height: 52.5vh;
-    border-radius: 20px;
+  .btn-Gradient {
+    font-size: 35px;
   }
-  .text-right h1 {
-    font-size: 60px;
-    margin-top: 75px;
+
+  .left {
+    width: 100%;
   }
+
+  .toRegist {
+    font-size: 25px;
+  }
+
   .img-left img {
-    width: 120px;
-    height: 120px;
-    margin-top: 50px;
+    width: 90px;
+    height: 85px;
   }
-  .signIn-google h1 {
-    font-size: 40px;
-    margin-left: 10px;
-    margin-bottom: 100px;
+
+  .text-right h1 {
+    font-size: 38px;
+    margin: 40px 0 0 0;
   }
+
   .inputValue label {
     font-size: 35px;
-    margin-left: 10px;
-    margin-bottom: 20px;
   }
+
   .inputValue input {
-    height: 4vh;
-    border-radius: 15px;
-  }
-  .btn-Gradient {
-    width: 25vw;
-    height: 4vh;
     font-size: 35px;
-    margin-top: 50px;
-    border-radius: 15px;
   }
-  .fontSize input {
-    font-size: 30px;
-    text-align: center;
-  }
-} */
+}
