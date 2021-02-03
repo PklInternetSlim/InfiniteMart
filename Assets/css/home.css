@@ -177,7 +177,7 @@ span.category {
 .setDiskon-Flash span:nth-child(1) {
   text-decoration: line-through;
   color: #c4c4c4;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .setDiskon-Flash span {
