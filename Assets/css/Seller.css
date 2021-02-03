@@ -45,7 +45,7 @@ body {
   body {
     background: none;
     background-image: var(--bgSeller-WelcomePhone);
-    background-color: #6FDEE7;
+    background-color: #6fdee7;
     background-repeat: no-repeat;
     background-size: cover;
   }
