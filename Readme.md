@@ -4,10 +4,11 @@ infinite mart adalah aplikasi marketplace berbasis web yang memungkinkan user da
 
 ### Target Minggu ini
 
-Implementasi 2 Mockup
+Implementasi 3 Mockup
 
 - User Page : Selesai && Responsive
 - Detail Produk Page : Selesai && Responsive
+- Keranjang Page : Belum Selesai
 
 ### Kalau Ingin Mengumpulkan
 
