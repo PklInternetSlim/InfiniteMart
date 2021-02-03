@@ -1,114 +1,59 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url(Variable.css);
+@import url("Variable.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-  background: var(--bgLogin-Register);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-  font-family: var(--fontFamily);
-  overflow: hidden;
+  background: #eafafc;
 }
 
-.bgWindow {
-  width: 100%;
-  height: 100vh;
+.card-login {
+  margin-top: 7vh;
+  height: auto;
+  min-height: 450px;
+  border-radius: 15px;
+  background-color: #fff;
+  color: #282828;
+  -webkit-box-shadow: 2px 2px 6px 2px rgba(51, 51, 51, 0.2);
+  box-shadow: 2px 2px 6px 2px rgba(51, 51, 51, 0.2);
 }
 
-.autsideCard {
-  border-radius: 10px;
-  height: 90vh;
-  width: 55%;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.signIn-google h1 {
-  font-size: 15px;
-  color: grey;
-}
-
-.insideCaard {
-  position: relative;
-  width: 560px;
-  height: 400px;
-  border-radius: 10px;
-  margin: 0 10%;
-  background: #fff;
-}
-
-.leftCard {
-  position: absolute;
-  right: 0;
-  top: 0;
+.rightCard {
   background: var(--bgLogin-RegisterTab);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 50%;
-  height: 100%;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  height: auto;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  min-height: 450px;
 }
 
-.leftCard h3 {
-  height: auto;
-  margin: 45px 50px 15px 50px;
-  font-size: 15px;
-  color: #e5e5e5;
+.regist-account {
+  font-weight: 500;
+  font-family: var(--fontFamily);
+  font-size: 20px;
+  color: #fff;
 }
 
 .btn-blueGradient {
   color: white;
   background: var(--btnRegister);
   width: 95px;
-  height: 35px;
-  margin-left: 18.1%;
   border-radius: 5px;
-  border: none;
-  cursor: pointer;
 }
 
-.btn-Gradient {
-  color: white;
-  background: var(--button-gradient);
+.sellerHeader {
+  margin-top: 50px;
   font-family: var(--fontFamily);
-  width: 95px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
+  font-size: 24px;
 }
 
-.leftCard .btn-blueGradient:hover {
-  color: #000;
-}
-
-.leftCard img {
-  width: 375;
-  height: 235px;
-  margin: 110px 0 0 0;
-}
-
-.rightCard {
+.anima2 {
+  user-select: none;
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-  z-index: 2;
-  border: 1px solid rgb(104, 100, 100);
-  border-left: none;
+  margin-top: -14rem;
+  margin-left: 1rem;
+  width: 550px;
+  height: 308px;
 }
 
 .img-left img {
@@ -123,178 +68,66 @@ body {
   margin: 35px 0 0 0;
 }
 
-.plus62 {
-  pointer-events: none;
+.signIn-google h1 {
+  font-size: 20px;
 }
 
-.inputValue input {
-  border-style: hidden;
-  color: #282828;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  font-size: var(--fontFamily);
+.btn-Gradient {
+  background: var(--button-gradient);
   border-radius: 5px;
-  font-size: 12px;
-  padding: 5px;
-  background: #f5f5f5;
+  color: #fff;
+  font-family: var(--fontFamily);
 }
 
-.inputValue label {
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.5);
-  margin-top: 5px;
-}
-
-/* Galaxy j4 */
-
-@media (min-width: 0px) and (max-width: 765px) {
+.toRegist {
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: center;
+  display: none;
 }
 
 /* * Phone */
-
 @media (min-width: 0px) and (max-width: 765px) {
-  .autsideCard {
-    width: 85%;
-  }
-
-  .insideCaard {
-    position: none;
-    width: 100vw;
-    height: 400px;
-    border-radius: 10px;
-    margin: 0;
-    background: #fff;
-  }
-}
-
-/* * Dekstop */
-
-@media (min-width: 1260px) {
-  .autsideCard {
-    width: 65%;
-    height: 90vh;
-  }
-
-  .insideCaard {
-    width: 600px;
-    height: 440px;
-  }
-
-  .leftCard img {
-    margin: 175px 0 0 0;
-    transform: translateX(25px);
-  }
-
-  .btn-Gradient {
-    margin-top: 20px;
-  }
-}
-
-/* Tab1 */
-@media (min-width: 768px) and (min-height: 1024px) {
-  .autsideCard {
-    width: 100%;
-    height: 0vh;
-  }
-
-  .insideCaard {
-    position: none;
-    width: 90vw;
-    height: 35vh;
-    border-radius: 10px;
-    margin: 0;
-    background: #fff;
-  }
-
-  .leftCard img {
-    width: 400px;
-    height: 250px;
-    margin: 300px 0 0 0;
-    transform: translateX(55px);
-  }
-
-  .leftCard h3 {
-    margin: 45px 50px 15px 50px;
-    font-size: 25px;
-  }
-
-  .btn-blueGradient {
-    width: 125px;
-    height: 45px;
-    margin-left: 13.1%;
-  }
-
-  .img-left img {
-    width: 60px;
-    height: 55px;
-    margin: 40px 15px 0 0;
-  }
-
-  .text-right h1 {
-    font-size: 25px;
-    margin: 55px 0 0 0;
-  }
-
-  .inputValue label {
-    font-size: 20px;
-  }
-
-  .inputValue input {
-    font-size: 20px;
-  }
-
-  .btn-Gradient {
-    width: 135px;
-    font-size: 20px;
-    margin-top: 20px;
-    padding: 10px 0;
-  }
-
-  .signIn-google h1 {
-    font-size: 20px;
-  }
-
-  .leftCard {
+  .right {
     display: none;
   }
 
-  .rightCard {
+  .signIn-google h1 {
+    font-size: 17px;
+  }
+
+  .btn-Gradient {
     width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 10px;
+  }
+
+  .toRegist {
+    display: block;
+  }
+}
+
+/* * Desktop */
+@media (min-width: 1260px) {
+  .card-login {
+    margin-top: 15vh;
+  }
+}
+
+/* * Tab1 */
+@media (min-width: 768px) and (min-height: 1024px) {
+  .card-login {
+    margin-top: 35vh;
+    width: 100%;
+    margin-left: 10rem;
   }
 }
 
 /* * Tab 2 */
 @media (min-width: 1024px) and (min-height: 1300px) {
-  .autsideCard {
-    width: 100%;
-    height: 0vh;
-  }
-
-  .insideCaard {
-    width: 90vw;
-  }
-
-  .leftCard img {
-    transform: translateX(115px);
-  }
-
-  .img-left img {
-    width: 70px;
-    height: 65px;
-  }
-
-  .text-right h1 {
-    font-size: 27px;
-    color: #61c0ee;
-    margin: 60px 0 0 0;
-  }
-
-  .signIn-google h1 {
-    font-size: 20px;
+  .anima1 {
+    margin-top: -230px;
+    margin-left: 70px;
+    width: 248px;
+    height: 252px;
   }
 }

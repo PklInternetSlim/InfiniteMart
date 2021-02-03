@@ -2,73 +2,81 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel='stylesheet' href='../Assets/css/bootstrap.min.css'>
-    <link rel="stylesheet" type="text/css" href="../Assets/css/LoginStyle.css">
     <link rel="icon" href="../Assets/img/logo_transparent.png">
+    <link rel='stylesheet' href='../Assets/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="../Assets/css/LoginStyle.css">
 </head>
 
 <body>
-
-    <div class="bgWindow">
-        <div class="autsideCard">
-            <div class="insideCaard">
-                <div class="row">
-
-                    <div class="col-md-6">
-                        <div class="rightCard">
-                            <div class="header-rightCard">
+    <div class="loginContainer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card-login">
+                        <div class="row">
+                            <div class="col-md-6 left">
                                 <div class="container">
-                                    <div class="d-flex">
-                                        <div class="img-left">
-                                            <img src="../Assets/img/logo_bg-putih.png" alt="">
+                                    <div class="row">
+                                        <div class="d-flex">
+                                            <div class="img-left">
+                                                <img src="../Assets/img/logo_bg-putih.png" alt="">
+                                            </div>
+                                            <div class="text-right">
+                                                <h1 class="fw-bold">Sign In</h1>
+                                            </div>
                                         </div>
-                                        <div class="text-right">
-                                            <h1 class="fw-bold">Sign In</h1>
+                                        <div class="signIn-google mt-2">
+                                            <h1>Sign In for better experience</h1>
                                         </div>
                                     </div>
-                                    <div class="signIn-google mt-2">
-                                        <h1>Sign In with Google</h1>
+                                    <div class="row mt-3">
+                                        <form action="#" method="POST">
+                                            <div class="inputValue">
+                                                <label for="username">Username</label>
+                                                <input type="text" name="username" class="mt-2 form-control" autofocus
+                                                    autocomplete="off">
+                                            </div>
+                                            <div class="inputValue mt-3">
+                                                <label for="password">Password</label>
+                                                <input type="password" name="password" class="mt-2 form-control"
+                                                    autocomplete="off">
+                                            </div>
+                                            <div class="buttonValue mt-3">
+                                                <button type="submit" class="btn btn-Gradient" name="submit">Sign
+                                                    In</button>
+                                            </div>
+                                        </form>
+                                        <a href="#" class="toRegist">Dont have account? Sign up</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-rightCard mt-3">
-                                <form action="#" method="POST">
+                            <div class="col-md-6 right">
+                                <div class="rightCard">
                                     <div class="container">
-                                        <div class="inputValue">
-                                            <label for="username">Username</label>
-                                            <input type="text" name="username" class="mt-2 form-control"
-                                                autocomplete="off">
-                                        </div>
-                                        <div class="inputValue">
-                                            <label for="password">Password</label>
-                                            <input type="password" name="password" class="mt-2 form-control"
-                                                autocomplete="off">
-                                        </div>
-                                        <div class="buttonValue mt-3">
-                                            <button type="submit" class="btn btn-Gradient" name="submit">Sign
-                                                In</button>
+                                        <div class="row">
+                                            <span class="regist-account mt-5">
+                                                Dont Have account?<br> Create one now
+                                            </span>
+                                            <a href="Register.html" class="btn btn-blueGradient m-3">Sign Up</a>
                                         </div>
                                     </div>
-                                </form>
+                                </div>
+                                <img class="anima2 user-select-none" src="../Assets/img/Character/anima3.png">
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-6">
-                        <div class="leftCard">
-                            <h3 class="fw-bold">Don't Have Account Yet?</h3>
-                            <a href="Register.html" class="btn btn-blueGradient">Sign In</a>
-                            <img class="img-right user-select-none" src="../Assets/img/Character/anima3.png">
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
-    <script src='../Assets/Js/popper.min.js'></script>
-    <script src="../Assets/Js/bootstrap.min.js"></script>
 </body>
+
+<script src='../Assets/Js/popper.min.js'></script>
+<script src="../Assets/Js/bootstrap.min.js"></script>
+<script>
+</script>
 
 </html>
