@@ -1,0 +1,364 @@
+@import url("Variable.css");
+
+body {
+  overflow-x: hidden;
+  font-family: var(--fontFamily);
+}
+
+.blank {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -1rem;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.navbar-home {
+  width: 100vw;
+  height: 70px;
+}
+
+.brand {
+  width: 50px;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+}
+
+.searchBarWrap {
+  height: 50px;
+  background: linear-gradient(
+    110.98deg,
+    #9b43ca 0.31%,
+    #3c74ff 47.99%,
+    #61c0ee 79.47%,
+    #6fdee7 91.86%
+  );
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.searchBar {
+  width: 85%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  padding: 5px 20px;
+  font-family: var(--fontFamily);
+}
+
+.searchBar::placeholder {
+  color: #fff;
+}
+
+.searchBar:focus {
+  color: #282828;
+}
+
+span.category {
+  font-family: var(--fontFamily);
+  font-size: 20px;
+  color: #282828;
+  font-weight: bold;
+}
+
+.btn-login {
+  width: 35%;
+  background-color: #d6e2eb;
+  font-weight: 500;
+  font-family: var(--fontFamily);
+  color: #0e538c;
+}
+
+.btn-signup {
+  width: 35%;
+  background-color: #0e538c;
+  font-weight: 500;
+  font-family: var(--fontFamily);
+  color: #d6e2eb;
+}
+
+.navbar-brand img {
+  width: 5vw;
+  height: 10vh;
+}
+
+.wrap-navbar-collapse {
+  display: none;
+}
+
+.collapse-navbar-home {
+  display: none;
+}
+
+.DetailImg-Barang img {
+  width: 20vw;
+  height: 55vh;
+}
+
+.btn-Gradient {
+  background: var(--button-gradient);
+  color: #fff;
+  font-family: var(--fontFamily);
+}
+
+/* Side Left */
+
+.DetailPenjelasan-Barang,
+.cardSpesifikasiProduk,
+.cardPenilaianProduk {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 30px 0;
+}
+
+.PenilaianStar p {
+  font-size: 13px;
+  margin: 0 5px;
+  color: gray;
+  opacity: 0.6;
+  text-decoration: underline;
+}
+
+.starGold img {
+  margin: 1px;
+}
+
+.overText p:nth-child(1) {
+  color: gray;
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.infoHarga p {
+  margin-right: 10px;
+}
+
+.underText {
+  color: gray;
+  opacity: 0.8;
+  margin-top: -2vh;
+  font-size: 13px;
+}
+
+.setColor div:nth-child(2) h5 {
+  margin-right: 10px;
+}
+
+.setColor div:nth-child(2) h5:last-child {
+  margin-right: 0;
+}
+
+.btn-payment,
+.btn-payment2 {
+  width: 47%;
+  font-size: 13px;
+  background-color: #d6e2eb;
+  font-weight: 500;
+  font-family: var(--fontFamily);
+  color: #0e538c;
+}
+
+.btn-payment2 {
+  color: #fff;
+  background: #0e538c;
+}
+
+.img-keranjang {
+  width: 15px;
+  margin-top: -2%;
+}
+
+.lineVerical {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1.5px;
+  background: #000;
+  height: 100%;
+}
+
+.contentSpesifikasi {
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.isiChat p {
+  margin: 0;
+}
+
+/* Side Right */
+
+.cardToko,
+.cardDetailStuff {
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px 0;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.cardDetailStuff {
+  padding: 0;
+  border-radius: 25px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.imgTopToko img {
+  width: 75px;
+  height: 75px;
+}
+
+.contentToko span {
+  background: var(--bgWelcome);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-payPal {
+  width: 100%;
+  background-color: #0e538c;
+  font-weight: 500;
+  font-family: var(--fontFamily);
+  color: #d6e2eb;
+}
+
+.topImg-MoreStuff img {
+  width: 100%;
+  height: 35vh;
+}
+
+/* End  */
+
+.sellerCard-Barang {
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.topImg-seller img {
+  width: 100%;
+}
+
+.btnSelengkapnya img {
+  width: 12.5px;
+  height: 12.5px;
+}
+
+.btn-Selengkapnya {
+  width: 250px;
+  height: 50px;
+  padding: 10px;
+  background: #0e538c;
+}
+
+.Footer {
+  width: 100vw;
+  background: #01384f;
+}
+
+.social-mediaIcon img {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.GoodleApp-Store {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.wrap-navbar-collapse {
+  display: none;
+}
+
+.collapse-navbar-home {
+  display: none;
+}
+
+/* * Phone */
+@media (min-width: 0px) and (max-width: 765px) {
+  body {
+    overflow-x: auto;
+    font-family: var(--fontFamily);
+  }
+
+  .blank {
+    display: none;
+  }
+
+  .collapse-navbar-home {
+    display: block;
+    width: 85%;
+    margin-right: -100rem;
+    overflow-y: auto;
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 102;
+  }
+
+  .navbar-home {
+    width: 100%;
+    height: 70px;
+  }
+
+  .wrap-navbar-login {
+    display: none;
+  }
+
+  .collapse-nav-home {
+    width: 80%;
+  }
+
+  .wrap-navbar-collapse {
+    display: block;
+    width: 20%;
+  }
+
+  .category {
+    display: none;
+  }
+}
+
+/* * Tab1 */
+@media (min-width: 768px) and (min-height: 1024px) {
+  body {
+    overflow-x: auto;
+    font-family: var(--fontFamily);
+  }
+
+  .navbar-home {
+    width: 100%;
+    height: 70px;
+  }
+
+  .wrap-navbar-login {
+    display: none;
+  }
+
+  .collapse-nav-home {
+    width: 80%;
+  }
+
+  .wrap-navbar-collapse {
+    display: block;
+    width: 20%;
+  }
+
+  .category {
+    display: none;
+  }
+}
