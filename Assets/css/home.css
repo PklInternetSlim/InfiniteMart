@@ -5,6 +5,16 @@ body {
   font-family: var(--fontFamily);
 }
 
+.blank {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -1rem;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
 .navbar-home {
   width: 100vw;
   height: 70px;
@@ -117,12 +127,21 @@ span.category {
 .cardGift {
   width: 100%;
   height: 30vh;
+  display: flex;
+  align-items: center;
   background: var(--bgGift);
 }
 
 .flashSale {
   width: 100vw;
   background: var(--bgWelcome);
+}
+
+.header-flashsale {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .timeHour-Flash,
@@ -135,7 +154,12 @@ span.category {
 }
 
 .positionFlash-time {
-  margin-left: 20px;
+  margin-left: -80px;
+}
+.all-produk-pos {
+  margin-left: 80px;
+  align-items: center;
+  justify-content: end;
 }
 
 .cardInfo-Barang {
@@ -180,21 +204,24 @@ span.category {
   background: #0dd409;
 }
 
+.editPosisi-btn {
+  width: 100%;
+  position: absolute;
+  margin-top: -13rem;
+}
+
 .btnSlide-Left,
 .btnSlide-Right {
-  position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   cursor: pointer;
 }
 
 .btnSlide-Left {
-  left: -5%;
-  z-index: 10;
+  margin-left: 0.5rem;
 }
 
 .btnSlide-Right {
-  right: -4%;
+  margin-right: 0.2rem;
 }
 
 .StokTersedia {
@@ -214,6 +241,7 @@ span.category {
   background: #fff;
   border-radius: 15px;
   height: 25vh;
+  align-items: center;
 }
 
 .cardInfo-Location img {
@@ -259,8 +287,120 @@ span.category {
   cursor: pointer;
 }
 
+.wrap-navbar-collapse {
+  display: none;
+}
+
+.collapse-navbar-home {
+  display: none;
+}
+
 /* * Phone */
 @media (min-width: 0px) and (max-width: 765px) {
+  body {
+    overflow-x: auto;
+    font-family: var(--fontFamily);
+  }
+
+  .blank {
+    display: none;
+  }
+
+  .collapse-navbar-home {
+    display: block;
+    width: 85%;
+    margin-right: -100rem;
+    overflow-y: auto;
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 102;
+  }
+
+  .navbar-home {
+    width: 100%;
+    height: 70px;
+  }
+
+  .wrap-navbar-login {
+    display: none;
+  }
+
+  .collapse-nav-home {
+    width: 80%;
+  }
+
+  .wrap-navbar-collapse {
+    display: block;
+    width: 20%;
+  }
+
+  .category {
+    display: none;
+  }
+
+  .slideOne {
+    width: 10vw;
+  }
+
+  .slideTwo,
+  .slideThree {
+    width: 5vw;
+  }
+
+  .cardGift {
+    display: flex;
+    align-items: center;
+  }
+
+  .cardGift img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .leftSide-Flash .h3 {
+    width: 100%;
+    color: #fff;
+    background-color: #61c0ee;
+  }
+
+  .timeHour-Flash,
+  .timeMinute-Flash,
+  .timeSecond-Flash {
+    width: 10vw;
+    height: 5vh;
+    background: #fff;
+    margin: 0 10px;
+  }
+
+  .positionFlash-time {
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .all-produk-pos {
+    margin-top: 10px;
+    margin-left: 0px;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .topCard-Barang img {
+    width: 50vw;
+    height: 40vh;
+  }
+
+  .cardInfo-Location img {
+    width: 50vw;
+    height: 35vh;
+  }
+}
+
+/* * Tab1 */
+@media (min-width: 768px) and (min-height: 1024px) {
   body {
     overflow-x: auto;
     font-family: var(--fontFamily);
@@ -269,10 +409,78 @@ span.category {
   .navbar-home {
     width: 100%;
     height: 70px;
-    background-color: #3c74ff;
   }
 
   .wrap-navbar-login {
     display: none;
+  }
+
+  .collapse-nav-home {
+    width: 80%;
+  }
+
+  .wrap-navbar-collapse {
+    display: block;
+    width: 20%;
+  }
+
+  .category {
+    display: none;
+  }
+
+  .headerCarousel {
+    height: 25vh;
+  }
+
+  .slideOne {
+    width: 5vw;
+    height: 1.5vh;
+  }
+
+  .slideTwo,
+  .slideThree {
+    width: 1.5vw;
+    height: 1.5vh;
+  }
+
+  .cardGift {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    background: var(--bgGift);
+  }
+
+  .timeHour-Flash,
+  .timeMinute-Flash,
+  .timeSecond-Flash {
+    width: 5vw;
+    height: 5vh;
+  }
+
+  .positionFlash-time {
+    margin-left: 0px;
+  }
+  .all-produk-pos {
+    margin-left: 0px;
+  }
+
+  .topCard-Barang img {
+    width: 25vw;
+    height: 20vh;
+  }
+
+  .cardFlex-Three {
+    height: 10vh;
+  }
+
+  .cardInfo-Location {
+    width: 100%;
+    height: 15vh;
+  }
+
+  .cardInfo-Location img {
+    width: 15vw;
+    height: 20vh;
   }
 }

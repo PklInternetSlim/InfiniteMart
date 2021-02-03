@@ -7,21 +7,21 @@
     <title>Home</title>
     <link rel='stylesheet' href='../Assets/css/bootstrap.min.css'>
     <link rel="icon" href="../Assets/img/logo_transparent.png">
-    <link rel="stylesheet" href="../Assets/css/home.css">
+    <link rel="stylesheet" href="../Assets/css/homeRizki.css">
 </head>
 
 <body>
 
     <!-- * navbvar -->
+    <div class="blank"></div>
     <nav class="navbar-home mt-3">
         <div class="container">
             <div class="row d-flex align-items-center ">
-                <div class="col-3 d-flex align-items-center wrap-navbar-login">
+                <div class="col-3 d-flex align-items-center collapse-nav-home">
                     <a class="px-3" href="#">
-                        <img src="../Assets/img/logo_transparent.png" alt="InfiniteMart"
-                            class="user-select-none brand">
+                        <img src="../Assets/img/logo_transparent.png" alt="InfiniteMart" class="user-select-none brand">
                     </a>
-                    <img src="../Assets/img/icon/kategori-btn.png" alt="" class="user-select-none">
+                    <img src="../Assets/img/icon/kategori-btn.png" alt="" class="user-select-none wrap-navbar-login">
                     <span class="mx-3 category">Kategori</span>
                 </div>
                 <div class="col-md-6 wrap-navbar-login">
@@ -36,7 +36,8 @@
                             </div>
                         </div>
                         <div class="col-1 d-flex align-items-center">
-                            <img src="../Assets/img/icon/ikon-kẻanjang-btn.png" alt="" style="transform: translateX(100%);" class="user-select-none">
+                            <img src="../Assets/img/icon/ikon-kẻanjang-btn.png" alt=""
+                                style="transform: translateX(100%);" class="user-select-none">
                         </div>
                     </div>
                 </div>
@@ -47,9 +48,58 @@
                         <button class="btn btn-signup">Sign up</button>
                     </div>
                 </div>
+
+                <div class="col-md-3 wrap-navbar-collapse">
+                    <div class="row justify-content-end">
+                        <div class="col d-flex justify-content-end">
+                            <img src="../Assets/img/icon/bars.png" alt="" width="35px" class="user-select-none pointer">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
+
+
+    <!-- * Collapse Navbar -->
+    <nav class="collapse-navbar-home">
+        <div class="container">
+            <div class="wrap-collapse ">
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="searchBarWrap p-3">
+                            <input type="text" class="searchBar form-control img-fluid"
+                                placeholder="Laper Pengen Seblak">
+                            <button class="btn mx-2">
+                                <img src="../Assets/img/icon/ikon-search-btn.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-3">
+                        <img src="../Assets/img/icon/kategori-btn.png" alt="" class="user-select-none">
+                        <span class="mx-3 fw-bold">Kategori</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-3">
+                        <img src="../Assets/img/icon/ikon-kẻanjang-btn.png" alt="" class="user-select-none">
+                        <span class="mx-3 fw-bold">Keranjang</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-3">
+                        <button class="btn btn-login">Login</button>&nbsp;&nbsp;
+                        <button class="btn btn-signup">Sign up</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- / collapse navbar -->
+
     <!-- /navbar -->
 
     <!-- * Header -->
@@ -65,9 +115,9 @@
 
     <!-- /Header -->
 
-    <!-- Content -->
-        
-    <div class="container mt-4">
+    <!-- * Menu -->
+
+    <div class="container my-4">
         <div class="d-flex justify-content-center">
             <div class="col-md-8">
                 <div class="row">
@@ -83,13 +133,11 @@
                     </div>
                     <div class="col-md-3">
                         <div class="cardInfoSale mt-3 d-flex justify-content-center align-items-center">
-                            <!-- <img src="../Assets/img/Home/hp.png" style="width: 15px; height: 20px; margin-right: 5px;"> -->
                             <span style="font-size: 15px;" class="fw-bold">Elektronika</span>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="cardInfoSale mt-3 d-flex justify-content-center align-items-center">
-                            <!-- <img src="../Assets/img/Home/gantungan.png"  style="width: 20px; height: 20px; margin-right: 5px;"> -->
                             <span style="font-size: 15px;" class="fw-bold">Pakaian</span>
                         </div>
                     </div>
@@ -98,19 +146,26 @@
         </div>
     </div>
 
-    <div class="container mt-5">
+    <!-- /menu -->
+
+    <!-- * Gift -->
+    <div class="container my-5">
         <div class="cardGift">
             <img src="../Assets/img/Home/kadoo.png" alt="" class="user-select-none">
         </div>
     </div>
-    
-    <div class="flashSale mt-5">
-        <div class="container py-3">
+    <!-- /Gift -->
 
-            <div class="header-FlashSale d-flex justify-content-between">
-                <div class="leftSide-Flash d-flex">
-                    <h3 class="text-white mt-2"><img src="../Assets/img/Home/Vector.png" alt=""> Flash Sale</h3>
-                    <div class="d-flex align-items-center positionFlash-time">
+    <!-- * Flash Sale -->
+    <div class="flashSale my-5">
+        <div class="header-flashsale">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3 class="text-white mt-2"><img src="../Assets/img/Home/Vector.png" alt=""> Flash Sale
+                        </h3>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center positionFlash-time">
                         <div class="timeHour-Flash rounded-circle d-flex justify-content-center align-items-center">
                             <span>06</span>
                         </div>
@@ -123,14 +178,15 @@
                             <span>18</span>
                         </div>
                     </div>
-                </div>
-                <div class="rightSide-Flash d-flex align-items-center" style="cursor: pointer;">
-                    <span class="text-white">Lihat Semua <img src="../Assets/img/Home/Vector 1.png" alt=""></span>
+                    <div class="col-md-3 text-white all-produk-pos d-flex">
+                        <span class="mx-3">Lihat Semua</span>
+                        <img src="../Assets/img/Home/Vector 1.png" alt="" width="20px" height="20px">
+                    </div>
                 </div>
             </div>
-
-            <div class="content-FlashSale position-relative mt-4 mb-5">
-
+        </div>
+        <div class="body-flashsale">
+            <div class="container pb-5">
                 <div class="row">
                     <div class="col-md-3">
                         <div class="cardInfo-Barang mt-3">
@@ -207,21 +263,15 @@
                                 </div>
                             </div>
                         </div>
-                    </div>    
-                </div>
-
-                <div class="editPosisi-btn">
-                    <div class="btnSlide-Left">
-                        <img src="../Assets/img/Home/tombol-geserKiri.png" alt="">
-                    </div>
-                    <div class="btnSlide-Right">
-                        <img src="../Assets/img/Home/tombol-geserKanan.png" alt="">
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    <!-- / Flash Sale -->
+
+    <!-- * What the F**k is this -->
 
     <div class="container mt-5">
         <div class="col-md-12">
@@ -233,39 +283,45 @@
                 </div>
                 <div class="col-md-4">
                     <div class="cardFlex-Three mt-2 mb-2">
-                        
+
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="cardFlex-Three mt-2 mb-2">
-                        
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="flashSale mt-5">
-        <div class="container">
+    <!-- / end wtf -->
+
+    <!-- * Also wtf -->
+    <div class="flashSale my-5">
+        <div class="container py-4">
             <div class="row my-5">
                 <div class="col-md-6">
-                    <div class="cardInfo-Location d-flex align-items-center mt-2 mb-2">
-                        <img style="position: absolute; left: 50px;" src="../Assets/img/Home/maps.png" alt="">
+                    <div class="cardInfo-Location d-flex my-2">
+                        <img src="../Assets/img/Home/maps.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="cardInfo-Location d-flex position-relative align-items-center mt-2 mb-2">
-                        <img style="position: absolute; right: -50px;" src="../Assets/img/Home/perspaleta1 1.png" alt="">
+                    <div class="cardInfo-Location d-flex my-2 justify-content-end">
+                        <img src="../Assets/img/Home/perspaleta1 1.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- / Also -->
+
+    <!-- * Produk -->
 
     <div class="container mt-5">
 
         <div class="row">
-            
+
             <div class="col-md-3">
                 <div class="sellerCard-Barang mb-4">
                     <div class="topImg-seller d-flex justify-content-center">
@@ -283,7 +339,7 @@
                             <div class="lineSucces-Flash"></div>
                             <span class="StokTersedia mt-1 mb-3">Stok Tersedia</span>
                         </div>
-                        <div class="contentCard-Barang d-flex flex-column" style="margin-top: 35%; transform: translateY(-50%);">
+                        <div class="contentCard-Barang d-flex flex-column justify-content-center">
                             <img src="../Assets/img/Home/ikon-bintang.png" alt="">
                             <img class="mt-2" src="../Assets/img/Home/ikon-tambah.png" style="cursor: pointer;">
                         </div>
@@ -308,7 +364,7 @@
                             <div class="lineSucces-Flash"></div>
                             <span class="StokTersedia mt-1 mb-3">Stok Tersedia</span>
                         </div>
-                        <div class="contentCard-Barang d-flex flex-column" style="margin-top: 35%; transform: translateY(-50%);">
+                        <div class="contentCard-Barang d-flex flex-column justify-content-center">
                             <img src="../Assets/img/Home/ikon-bintang.png" alt="">
                             <img class="mt-2" src="../Assets/img/Home/ikon-tambah.png" style="cursor: pointer;">
                         </div>
@@ -333,7 +389,7 @@
                             <div class="lineSucces-Flash"></div>
                             <span class="StokTersedia mt-1 mb-3">Stok Tersedia</span>
                         </div>
-                        <div class="contentCard-Barang d-flex flex-column" style="margin-top: 35%; transform: translateY(-50%);">
+                        <div class="contentCard-Barang d-flex flex-column justify-content-center">
                             <img src="../Assets/img/Home/ikon-bintang.png" alt="">
                             <img class="mt-2" src="../Assets/img/Home/ikon-tambah.png" style="cursor: pointer;">
                         </div>
@@ -347,7 +403,7 @@
                         <img src="../Assets/img/Produk/kursi.png" alt="">
                     </div>
                     <div class="container d-flex justify-content-between">
-                        
+
                         <div class="contentCard-Barang d-flex flex-column mt-2">
                             <h5 class="fw-bold">Kursi</h5>
                             <span style="color: gold;">Rp. 63.000</span>
@@ -358,7 +414,7 @@
                             <div class="lineSucces-Flash"></div>
                             <span class="StokTersedia mt-1 mb-3">Stok Tersedia</span>
                         </div>
-                        <div class="contentCard-Barang d-flex flex-column" style="margin-top: 35%; transform: translateY(-50%);">
+                        <div class="contentCard-Barang d-flex flex-column justify-content-center">
                             <img src="../Assets/img/Home/ikon-bintang.png" alt="">
                             <img class="mt-2" src="../Assets/img/Home/ikon-tambah.png" style="cursor: pointer;">
                         </div>
@@ -384,7 +440,7 @@
                             <div class="lineSucces-Flash"></div>
                             <span class="StokTersedia mt-1 mb-3">Stok Tersedia</span>
                         </div>
-                        <div class="contentCard-Barang d-flex flex-column" style="margin-top: 35%; transform: translateY(-50%);">
+                        <div class="contentCard-Barang d-flex flex-column justify-content-center">
                             <img src="../Assets/img/Home/ikon-bintang.png" alt="">
                             <img class="mt-2" src="../Assets/img/Home/ikon-tambah.png" style="cursor: pointer;">
                         </div>
@@ -409,7 +465,7 @@
                             <div class="lineSucces-Flash"></div>
                             <span class="StokTersedia mt-1 mb-3">Stok Tersedia</span>
                         </div>
-                        <div class="contentCard-Barang d-flex flex-column" style="margin-top: 35%; transform: translateY(-50%);">
+                        <div class="contentCard-Barang d-flex flex-column justify-content-center">
                             <img src="../Assets/img/Home/ikon-bintang.png" alt="">
                             <img class="mt-2" src="../Assets/img/Home/ikon-tambah.png" style="cursor: pointer;">
                         </div>
@@ -434,7 +490,7 @@
                             <div class="lineSucces-Flash"></div>
                             <span class="StokTersedia mt-1 mb-3">Stok Tersedia</span>
                         </div>
-                        <div class="contentCard-Barang d-flex flex-column" style="margin-top: 35%; transform: translateY(-50%);">
+                        <div class="contentCard-Barang d-flex flex-column justify-content-center">
                             <img src="../Assets/img/Home/ikon-bintang.png" alt="">
                             <img class="mt-2" src="../Assets/img/Home/ikon-tambah.png" style="cursor: pointer;">
                         </div>
@@ -448,7 +504,7 @@
                         <img src="../Assets/img/Produk/kursi.png" alt="">
                     </div>
                     <div class="container d-flex justify-content-between">
-                        
+
                         <div class="contentCard-Barang d-flex flex-column mt-2">
                             <h5 class="fw-bold">Kursi</h5>
                             <span style="color: gold;">Rp. 63.000</span>
@@ -459,7 +515,7 @@
                             <div class="lineSucces-Flash"></div>
                             <span class="StokTersedia mt-1 mb-3">Stok Tersedia</span>
                         </div>
-                        <div class="contentCard-Barang d-flex flex-column" style="margin-top: 35%; transform: translateY(-50%);">
+                        <div class="contentCard-Barang d-flex flex-column justify-content-center">
                             <img src="../Assets/img/Home/ikon-bintang.png" alt="">
                             <img class="mt-2" src="../Assets/img/Home/ikon-tambah.png" style="cursor: pointer;">
                         </div>
@@ -469,14 +525,15 @@
             </div>
         </div>
         <div class="btnSelengkapnya d-flex justify-content-center mt-5 ">
-            <button type="submit" class="btn btn-Selengkapnya text-white mb-3">Selengkapnya <img src="../Assets/img/Home/Vector 1.png" alt=""></button>
+            <button type="submit" class="btn btn-Selengkapnya text-white mb-3">Selengkapnya <img
+                    src="../Assets/img/Home/Vector 1.png" alt=""></button>
         </div>
     </div>
 
-    <!-- /Content -->
+    <!-- /produk -->
 
-    <!-- Footer -->
-    
+    <!-- * Footer -->
+
     <div class="Footer mt-5 py-5">
         <div class="container">
             <div class="row">
@@ -514,11 +571,11 @@
         </div>
     </div>
 
-    <!-- /Footer -->
+    <!-- /footer -->
 
 </body>
 <script src="../Assets/Js/popper.min.js"></script>
 <script src="../Assets/Js/bootstrap.min.js"></script>
-<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script> 
+<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
 </html>
