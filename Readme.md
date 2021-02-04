@@ -9,6 +9,9 @@ Implementasi 3 Mockup
 - User Page : Selesai && Responsive
 - Detail Produk Page : Selesai && Responsive
 - Keranjang Page : Belum Selesai
+- Search page : Belum Selesai
+- Profile page : Belum selesai
+- Tambah Barang page : belum selesai
 
 ### Kalau Ingin Mengumpulkan
 
