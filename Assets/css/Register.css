@@ -3,11 +3,13 @@
 
 body {
   background: #eafafc;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .card-login {
-  margin: 7vh auto;
   min-height: 450px;
   border-radius: 15px;
   background-color: #fff;
@@ -113,7 +115,7 @@ body {
 /* * Tab1 */
 @media (min-width: 768px) and (min-height: 1024px) {
   .card-login {
-    margin-top: 20vh;
+    margin-top: 0vh;
     width: 100%;
     min-height: 0;
     padding-bottom: 5%;
@@ -159,7 +161,7 @@ body {
 /* * Tab 2 */
 @media (min-width: 1024px) and (min-height: 1300px) {
   .card-login {
-    margin-top: 10vh;
+    margin-top: 0vh;
     width: 100%;
     min-height: 0;
     padding-bottom: 5%;
