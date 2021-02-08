@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>
+		Belanja Sesukamu
+	</title>
+	<link rel="icon" href="../Assets/img/FormKeranjang/logo_text_bg-putih.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../Assets/css/bootstrap.css">
+    <script type="text/javascript" src="../Assets/Js/jquery.js"></script>
+    <script type="text/javascript" src="../Assets/Js/bootstrap.js"></script>
+</head>
+<body>
+
+	<!-- Container -->
+	<!-- Navigation Bar -->
+
+	<div class="container">
+		<nav class="navbar fixed-top  navbar-light bg-light">
+		  <div class="container-fluid">
+
+			<!--Ikon Keranjang-->
+
+			<img src="../Assets/img/FormKeranjang/ikon-kẻanjang-btn.png" class="imgKeranjang" type="button">
+			<style>
+				.imgKeranjang {
+					width: 2vw; 
+					height: 5vh; 
+					position: absolute; 
+					margin-left: 71vw; 
+					margin-top: 3px; 
+					border: transparent;
+				}
+			</style>
+			
+			<!--Logo-->
+			
+			<img src="../Assets/img/FormKeranjang/logo_transparent.png" class="imgLogo">
+			<style>
+				.imgLogo {
+					width: 3vw; 
+					height: 6vh; 
+					position: absolute;
+				}
+			</style>
+
+			<!--Ikon Kategori-->
+
+			<img src="../Assets/img/FormKeranjang/kategori-btn.png" class="imgKategori" type="button">
+			<style>
+				.imgKategori {
+					width: 1vw; 
+					height: 2vh; 
+					position: absolute; 
+					margin-left: 80px; 
+					margin-top: 3px;
+				}
+			</style>
+			<a class="navbar-brand" style="margin-left: 100px;">Kategori</a>
+
+			<!--Border Search-->
+
+			<border name="search" class="search">
+			<style>
+				.search {
+					position: absolute; 
+					border: transparent;
+					margin-left: 30vw; 
+					width: 33.5vw;
+					height: 6vh; 
+					background: linear-gradient(110.98deg, #9B43CA 0.31%, #3C74FF 47.99%, #61C0EE 79.47%, #6FDEE7 91.86%); 
+					border-radius: 10px; 
+					box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+				}
+			</style>
+
+			<!--Input Search-->
+
+			<input type="text" name="search" class="Search" placeholder="Masukkan kata kunci...">
+			<style>
+				.Search {
+					margin-left: 20px;
+					margin-top: 3.5px;
+					padding-left: 12px;
+					width: 28vw;
+					height: 4.8vh;
+					position: absolute;
+					border: transparent;
+					background: rgba(255, 255, 255, 0.4);
+					border-radius: 20px;
+					color: white;
+				}
+				.Search::-webkit-input-placeholder {
+					color:whitesmoke;
+				}
+			</style>
+
+			<!--Button Login-->
+
+			<form action="#" method="POST">
+			<button type="submit" class="signIn">Login</button>
+			<style>
+				.signIn {
+					margin-top: 4px;
+					position: absolute;
+					width: 6vw;
+					height: 5vh;
+					background: rgba(14, 83, 140, 0.17);
+					border-radius: 8px;
+					border: transparent;
+					margin-left: 50vw;
+					font-family: "Poppins", sans-serif;
+					font-style: normal;
+					color: #0E538C;
+					transition: 0.3s;
+				}
+				.signIn:hover {
+					background: turquoise;
+				}
+			</style>
+			</form>
+
+			<!--Button Sign Up-->
+
+			<form action="#" method="POST">
+			<button type="submit" class="signUp">Sign Up</button>
+			<style>
+				.signUp {
+					margin-top: 4px;
+					position: absolute;
+					width: 7vw;
+					height: 5vh;
+					background:#0E538C;
+					border-radius: 8px;
+					border: transparent;
+					margin-left: 56.5vw;
+					font-family: "Poppins", sans-serif;
+					font-style: normal;
+					color: #ffffff;
+					transition: 0.3s;
+				}
+				.signUp:hover {
+					background: turquoise;
+				}
+			</style>
+			</form>
+
+			<!--Ikon Search-->
+
+			<form action="#" method="POST">
+			<input type="image" src="../Assets/img/FormKeranjang/ikon-search-btn.png" class="imgSearch" type="button">
+			<style>
+				.imgSearch {
+					width: 25px;
+					height: 30px;
+					margin-left: 30.5vw;
+					margin-top: 6px;
+				}
+			</style>
+			</form>
+		</nav>
+	</div>
+	<br><br><br><br>
+	<div class="container">
+
+		<!--Produk Yang Atas-->
+
+		<div class="row">
+			<div class="col-8">
+				<div class="card" style="border-radius: 20px;  box-shadow:  3px 4px #ccc;">
+				  <div class="card-body">
+
+					<!--Button untuk pilih PRODUK-->
+
+					<button type="button" class="btn-all"></button>
+					<style>
+						.btn-all {
+							position: absolute;
+							background: #61C0EE;
+							border: transparent;
+							margin-top: 3px;
+							width: 20px;
+							height: 20px;
+						}
+					</style>
+				  	<h5 style="margin-left: 30px;">Pilih Semua</h5>
+				  </div>
+				</div>
+			</div>
+			<br><br><br><br>
+    		<div class="col-4">
+    			<div class="card" style="border-radius: 20px;  box-shadow:  3px 4px #ccc;">
+				  <div class="card-body">
+				  	<h5 style="text-align: center;">Punya Kode Promo?</h5>
+				  </div>
+				</div>
+    		</div>
+		</div>
+		<div class="row">
+			<div class="col-8">
+				<div class="card" style="border-radius: 20px; box-shadow: 3px 4px #ccc;">
+				  <div class="card-body">
+				  	<div class="row">
+					  	<div class="col-4">
+
+							<!--Button untuk pilih PRODUK-->
+
+							<button type="button" class="btn-all"></button>
+							<style>
+								.btn-all {
+									position: absolute;
+									background: #61C0EE;
+									border: transparent;
+									margin-top: 3px;
+									width: 20px;
+									height: 20px;
+								}
+							</style>
+							  <h6 style="color:#3c74ff; margin-left: 30px;">Liam's Furniture</h6><br>
+
+							  <!--Button untuk pilih PRODUK-->
+
+							  <button type="button" class="btn-all"></button>
+							  <style>
+								  .btn-all {
+									  position: absolute;
+									  background: #61C0EE;
+									  border: transparent;
+									  margin-top: 3px;
+									  width: 20px;
+									  height: 20px;
+								  }
+							  </style>
+						  	<img src="../Assets/img/FormKeranjang/kursi_biru.png" height="150px" style="margin-left: 30px;">
+					  	</div>
+
+						  <div class="col-8"><br>
+					  		<p>
+					  			<h2>LANGFJALL</h2>
+					  			<h5 style="color: red;">Rp.1.000.000,-</h5>
+					  			<h6 style="color: red;">18% OFF</h6>
+					  			<strong>
+						  			<ul class="list-inline">
+									  <li class="list-inline-item">WARNA :</li>
+									  <li class="list-inline-item">BIRU MUDA</li>
+									  <li class="list-inline-item">HITAM</li>
+									</ul>
+
+									<!--Ikon Tong Sampah Produk-->
+
+									<input type="image" src="../Assets/img/FormKeranjang/ikon_tong_sampah.jpg.png" class="ikonTongSampah">
+									<style>
+										.ikonTongSampah {
+											width: 2.5vw; 
+											height: 5vh; 
+											margin-left: 29.5vw; 
+											margin-top: -100px; 
+											position: absolute;
+										}
+									</style>
+
+									<!--Ikon Love Produk-->
+
+									<input type="image" src="../Assets/img/FormKeranjang/ikon-love.jpg.png" class="ikonLove">
+									<style>
+										.ikonLove {
+											width: 2.5vw; 
+											height: 5vh; 
+											margin-left: 29.5vw; 
+											margin-top: -55px; 
+											position: absolute;
+										}
+									</style>
+
+									<!--Border untuk menentukan kuantitas PRODUK yang akan dibeli-->
+
+									<border name="field-text" class="field-text">
+									<style>
+										.field-text {
+											position: absolute;
+											background: transparent;
+											margin-top: -10px;
+											margin-left: 23vw;
+											width: 9vw;
+											height: 4.5vh;
+											border: 2px solid gray;
+										}
+									</style>
+
+									<!--Input Placeholder untuk menentukan kuantitas PRODUK yang akan dibeli-->
+
+									<input type="text" class="text" placeholder="1"> 
+									<style>
+										.text {
+											position: absolute;
+											background: transparent;
+											text-align: center;
+											font-family: "Poppins", sans-serif;
+											color: gray;
+											border: 2px solid gray;
+											margin-top: -2px;
+											margin-left: 1.75vw;
+											width: 5vw;
+											height: 4.5vh;
+										}
+										.text::-webkit-input-placeholder {
+											color: gray;
+											font-family: "Poppins", sans-serif;
+											text-align: center;
+											font-size: 17px;
+											font-weight: bold;
+										}
+									</style>
+
+									<!--Image untuk mengurangi kuantitas PRODUK-->
+
+									<input type="image" class="imgMinus" src="../Assets/img/FormKeranjang/ikon-minus.jpg.png">
+									<style>
+										.imgMinus {
+											position: absolute;
+											background: transparent;
+											border: 2px solid gray;
+											width: 2vw;
+											height: 4.5vh;
+											margin-left: -1.9px;
+											margin-top: -1.9px;
+										}
+									</style>
+
+									<!--Image untuk menambahkan kuantitas PRODUK-->
+
+									<input type="image" class="imgPlus" src="../Assets/img/FormKeranjang/ikon-plus.jpg.png">
+									<style>
+										.imgPlus {
+											position: absolute;
+											background: transparent;
+											border: 2px solid gray;
+											width: 2.25vw;
+											height: 4.5vh;
+											margin-left: 6.6vw;
+											margin-top: -1.9px;
+										}
+									</style>  
+								</strong>
+							  </p>
+					  	</div>
+				  	</div>
+
+				  </div>
+				</div>
+			</div>
+    		<div class="col-4">
+    			<div class="card" style="border-radius: 20px;  box-shadow:  3px 4px #ccc;">
+				  <div class="card-body text-center" style="text-align: center; height: 240px;"><br>
+				  	<h4 style="color: red;">Rp.2.000.000</h4><br>
+				  	<h5>Yuk Check Out Yuk</h5><br>
+				  	<button type="button" class="btn btn-warning"><h5 style="color: white;">Check Out(2)</h5></button>
+				  </div>
+				</div>
+    		</div>
+    	</div>
+    </div><br>
+
+	<!--Produk Yang Bawah-->
+
+	<div class="container">
+    	<div class="row">
+			<div class="col-8">
+				<div class="card" style="border-radius: 20px;  box-shadow:  3px 4px #ccc;">
+				  <div class="card-body">
+				  	<div class="row">
+					  	<div class="col-4">
+
+							<!--Button untuk pilih PRODUK-->
+
+							<button type="button" class="btn-all"></button>
+							<style>
+								.btn-all {
+									position: absolute;
+									background: #61C0EE;
+									border: transparent;
+									margin-top: 3px;
+									width: 20px;
+									height: 20px;
+								}
+							</style>
+							  <h6 style="color:#3c74ff; margin-left: 30px;">Liam's Furniture</h6><br>
+
+							  <!--Button untuk pilih PRODUK-->
+
+							  <button type="button" class="btn-all"></button>
+							  <style>
+								  .btn-all {
+									  position: absolute;
+									  background: #61C0EE;
+									  border: transparent;
+									  margin-top: 3px;
+									  width: 20px;
+									  height: 20px;
+								  }
+							  </style>
+						  	<img src="../Assets/img/FormKeranjang/kursi_biru.png" height="150px" style="margin-left: 30px;">
+					  	</div>
+
+					  	<div class="col-8"><br>
+					  		<p>
+					  			<h2>LANGFJALL</h2>
+					  			<h5 style="color: red;">Rp.1.000.000,-</h5>
+					  			<h6 style="color: red;">18% OFF</h6>
+					  			<strong>
+						  			<ul class="list-inline">
+									  <li class="list-inline-item">WARNA :</li>
+									  <li class="list-inline-item">BIRU MUDA</li>
+									  <li class="list-inline-item">HITAM</li>
+									</ul>
+
+									<!--Ikon Tong Sampah Produk-->
+
+									<input type="image" src="../Assets/img/FormKeranjang/ikon_tong_sampah.jpg.png" class="ikonTongSampah">
+									<style>
+										.ikonTongSampah {
+											width: 2.5vw; 
+											height: 5vh; 
+											margin-left: 29.5vw; 
+											margin-top: -100px; 
+											position: absolute;
+										}
+									</style>
+
+									<!--Ikon Love Produk-->
+
+									<input type="image" src="../Assets/img/FormKeranjang/ikon-love.jpg.png" class="ikonLove">
+									<style>
+										.ikonLove {
+											width: 2.5vw; 
+											height: 5vh; 
+											margin-left: 29.5vw; 
+											margin-top: -55px; 
+											position: absolute;
+										}
+									</style>
+
+									<!--Border untuk menentukan kuantitas PRODUK yang akan dibeli-->
+
+									<border name="field-text" class="field-text">
+									<style>
+										.field-text {
+											position: absolute;
+											background: transparent;
+											margin-top: -10px;
+											margin-left: 23vw;
+											width: 9vw;
+											height: 4.5vh;
+											border: 2px solid gray;
+										}
+									</style>
+
+									<!--Input Placeholder untuk menentukan kuantitas PRODUK yang akan dibeli-->
+
+									<input type="text" class="text" placeholder="1"> 
+									<style>
+										.text {
+											position: absolute;
+											background: transparent;
+											text-align: center;
+											font-family: "Poppins", sans-serif;
+											color: gray;
+											border: 2px solid gray;
+											margin-top: -2px;
+											margin-left: 1.75vw;
+											width: 5vw;
+											height: 4.5vh;
+										}
+										.text::-webkit-input-placeholder {
+											color: gray;
+											font-family: "Poppins", sans-serif;
+											text-align: center;
+											font-size: 17px;
+											font-weight: bold;
+										}
+									</style>
+
+									<!--Image untuk mengurangi kuantitas PRODUK-->
+
+									<input type="image" class="imgMinus" src="../Assets/img/FormKeranjang/ikon-minus.jpg.png">
+									<style>
+										.imgMinus {
+											position: absolute;
+											background: transparent;
+											border: 2px solid gray;
+											width: 2vw;
+											height: 4.5vh;
+											margin-left: -1.9px;
+											margin-top: -1.9px;
+										}
+									</style>
+
+									<!--Image untuk menambahkan kuantitas PRODUK-->
+
+									<input type="image" class="imgPlus" src="../Assets/img/FormKeranjang/ikon-plus.jpg.png">
+									<style>
+										.imgPlus {
+											position: absolute;
+											background: transparent;
+											border: 2px solid gray;
+											width: 2.25vw;
+											height: 4.5vh;
+											margin-left: 6.6vw;
+											margin-top: -1.9px;
+										}
+									</style>  
+								</strong>
+					  		</p>
+					  	</div>
+				  	</div>
+				 </div>
+			</div>
+		</div>
+    		<div class="col-4">
+    			<div class="card" style="border-radius: 20px;  box-shadow:  3px 4px #ccc;">
+				  <div class="card-body text-center" style="text-align: center; height: 240px;"><br>
+				  	<div class="row">
+				  	<div class="col">
+				  		<h4>Metode Pembayaran</h4>
+				  	</div>
+				  	</div>
+					  	<div class="row">
+					  		<div class="col">
+					  			<img src="../Assets/img/FormKeranjang/indomaret.png" width="80px">
+					  		</div>
+					  		<div class="col">
+					  			<img src="../Assets/img/FormKeranjang/alfamart.png" width="80px">
+					  		</div>
+					  		<div class="col">
+					  			<img src="../Assets/img/FormKeranjang/bca.png" width="80px">
+					  		</div>
+				  		</div>
+					</div>
+    			</div>
+    		</div>
+    </div><br><br><br>
+
+    <!--Rekomendasi Produk-->
+
+    <div class="container">
+    	<h2 style="display: flex; justify-content: center;">Rekomendasi Produk</h2>
+    	<br><br><br>
+    	<div class="row">
+	    	<div class="col">
+	    		<div class="card" style="width: 15rem; height: 25rem; border-radius: 16px; box-shadow: 3px 3px #ccc;">
+				  <img src="../Assets/img/FormKeranjang/gelasPink.png" class="card-img-top" alt="..." >
+					<div class="card-body">
+			    		<h4>
+			    			<strong>
+			    			LANGFJALL
+			    			</strong>
+			    		</h4>
+			    		<h5 style="color: #FFB600;">
+							Rp1.000.000,-
+						</h5>
+
+						<!-- h5 Style yang Rp2.000.000,- -->
+
+						<h5 class="h5-bottom">
+							Rp2.000.000,- 
+							<style>
+								.h5-bottom {
+									font-size: 14px; 
+									color: #D9D9D9; 
+									margin-bottom: 15px; 
+									text-decoration: line-through #D9D9D9;
+								}
+							</style>
+						</h5>
+
+						<!--Paragraf Style yang 18% OFF-->
+
+						<p class="p-right">
+							18% OFF
+							<style>
+								.p-right {
+									font-size: 14px; 
+									color: #FA0000; 
+									margin-top: -35px; 
+									margin-left: 7vw; 
+									font-family: "Poppins", sans-serif;
+								}
+							</style>
+						</p>
+
+					<!--Border Green Line-->	
+
+					<border name="green-line" class="green-line">
+					<style>
+						.green-line {
+							position: absolute;
+							width: 12vw;
+							height: 1vh;
+							background: #C4C4C4;
+							border-radius: 20px;
+						}
+					</style>
+
+					<!--Fill Border Green Line-->
+
+					<border name="fill-border" class="fill-border">
+					<style>
+						.fill-border {
+							position: absolute;
+							width: 9vw;
+							height: 1vh;
+							background: #0DD509;
+							border-radius: 20px;
+						}
+					</style>
+
+					<!--Ikon Bintang PRODUK-->
+
+					<input type="image" class="imgBintang" src="../Assets/img/FormKeranjang/ikon-bintang.jpg.png">
+					<style>
+						.imgBintang {
+							position: absolute;
+							width: 2vw; 
+							height: 4vh;
+							margin-left: 13.5vw;
+							margin-top: -40px;
+						}
+					</style>
+
+					<!--Ikon Add PRODUK-->
+
+					<input type="image" class="imgAdd" src="../Assets/img/FormKeranjang/ikon-add.jpg.png">
+					<style>
+						.imgAdd {
+							position: absolute;
+							width: 2vw; 
+							height: 4vh;
+							margin-left: 13.5vw;
+							margin-top: -10px;
+						}
+					</style>
+
+					<!--Label Stok PRODUK-->
+					
+						<label class="label-stok">Stok Tersedia</label>
+						<style>
+							.label-stok {
+								font-family: "Poppins", sans-serif; 
+								font-size: 15px; 
+								margin-top: 10px; 
+								font-style: italic;
+							}
+						</style>
+			    	</div>
+		    	</div> 
+			</div>
+	    	<div class="col">
+	    		<div class="card" style="width: 15rem; height: 25rem; border-radius: 16px; box-shadow: 3px 3px #ccc;">
+				  <img src="../Assets/img/FormKeranjang/jamItem.png" class="card-img-top" alt="...">
+					<div class="card-body">
+			    		<h4>
+			    			<strong>
+			    			LANGFJALL
+			    			</strong>
+			    		</h4>
+			    		<h5 style="color:#FFB600;">
+			    			Rp1.000.000,-
+						</h5>
+
+						<!-- h5 Style yang Rp2.000.000,- -->
+
+						<h5 class="h5-bottom">
+							Rp2.000.000,- 
+							<style>
+								.h5-bottom {
+									font-size: 14px; 
+									color: #D9D9D9; 
+									margin-bottom: 15px; 
+									text-decoration: line-through #D9D9D9;
+								}
+							</style>
+						</h5>
+
+						<!--Paragraf Style yang 18% OFF-->
+
+						<p class="p-right">
+							18% OFF
+							<style>
+								.p-right {
+									font-size: 14px; 
+									color: #FA0000; 
+									margin-top: -35px; 
+									margin-left: 7vw; 
+									font-family: "Poppins", sans-serif;
+								}
+							</style>
+						</p>	
+						
+					<!--Border Green Line-->	
+
+					<border name="green-line" class="green-line">
+					<style>
+						.green-line {
+							position: absolute;
+							width: 12vw;
+							height: 1vh;
+							background: #C4C4C4;
+							border-radius: 20px;
+						}
+					</style>
+
+					<!--Fill Border Green Line-->
+
+					<border name="fill-border" class="fill-border">
+					<style>
+						.fill-border {
+							position: absolute;
+							width: 9vw;
+							height: 1vh;
+							background: #0DD509;
+							border-radius: 20px;
+						}
+					</style>
+
+					<!--Ikon Bintang PRODUK-->
+
+					<input type="image" class="imgBintang" src="../Assets/img/FormKeranjang/ikon-bintang.jpg.png">
+					<style>
+						.imgBintang {
+							position: absolute;
+							width: 2vw; 
+							height: 4vh;
+							margin-left: 13.5vw;
+							margin-top: -40px;
+						}
+					</style>
+
+					<!--Ikon Add PRODUK-->
+
+					<input type="image" class="imgAdd" src="../Assets/img/FormKeranjang/ikon-add.jpg.png">
+					<style>
+						.imgAdd {
+							position: absolute;
+							width: 2vw; 
+							height: 4vh;
+							margin-left: 13.5vw;
+							margin-top: -10px;
+						}
+					</style>
+
+					<!--Label Stok PRODUK-->
+					
+						<label class="label-stok">Stok Tersedia</label>
+						<style>
+							.label-stok {
+								font-family: "Poppins", sans-serif; 
+								font-size: 15px; 
+								margin-top: 10px; 
+								font-style: italic;
+							}
+						</style>	
+			    	</div>
+		    	</div>
+		    </div>
+		    <div class="col">
+	    		<div class="card" style="width: 15rem; height: 25rem; border-radius: 16px; box-shadow: 3px 3px #ccc;">
+				  <img src="../Assets/img/FormKeranjang/gelasPink.png" class="card-img-top" alt="...">
+					<div class="card-body">
+			    		<h4>
+			    			<strong>
+			    			LANGFJALL
+			    			</strong>
+			    		</h4>
+			    		<h5 style="color:#FFB600;">
+			    			Rp1.000.000,-
+						</h5>
+
+						<!-- h5 Style yang Rp2.000.000,- -->
+
+						<h5 class="h5-bottom">
+							Rp2.000.000,- 
+							<style>
+								.h5-bottom {
+									font-size: 14px; 
+									color: #D9D9D9; 
+									margin-bottom: 15px; 
+									text-decoration: line-through #D9D9D9;
+								}
+							</style>
+						</h5>
+
+						<!--Paragraf Style yang 18% OFF-->
+
+						<p class="p-right">
+							18% OFF
+							<style>
+								.p-right {
+									font-size: 14px; 
+									color: #FA0000; 
+									margin-top: -35px; 
+									margin-left: 7vw; 
+									font-family: "Poppins", sans-serif;
+								}
+							</style>
+						</p>
+
+					<!--Border Green Line-->	
+
+					<border name="green-line" class="green-line">
+					<style>
+						.green-line {
+							position: absolute;
+							width: 12vw;
+							height: 1vh;
+							background: #C4C4C4;
+							border-radius: 20px;
+						}
+					</style>
+
+					<!--Fill Border Green Line-->
+
+					<border name="fill-border" class="fill-border">
+					<style>
+						.fill-border {
+							position: absolute;
+							width: 9vw;
+							height: 1vh;
+							background: #0DD509;
+							border-radius: 20px;
+						}
+					</style>
+
+					<!--Ikon Bintang PRODUK-->
+
+					<input type="image" class="imgBintang" src="../Assets/img/FormKeranjang/ikon-bintang.jpg.png">
+					<style>
+						.imgBintang {
+							position: absolute;
+							width: 2vw; 
+							height: 4vh;
+							margin-left: 13.5vw;
+							margin-top: -40px;
+						}
+					</style>
+
+					<!--Ikon Add PRODUK-->
+
+					<input type="image" class="imgAdd" src="../Assets/img/FormKeranjang/ikon-add.jpg.png">
+					<style>
+						.imgAdd {
+							position: absolute;
+							width: 2vw; 
+							height: 4vh;
+							margin-left: 13.5vw;
+							margin-top: -10px;
+						}
+					</style>
+
+					<!--Label Stok PRODUK-->
+					
+						<label class="label-stok">Stok Tersedia</label>
+						<style>
+							.label-stok {
+								font-family: "Poppins", sans-serif; 
+								font-size: 15px; 
+								margin-top: 10px; 
+								font-style: italic;
+							}
+						</style>
+			    	</div>
+		    	</div>
+		    </div>
+		    <div class="col">
+	    		<div class="card" style="width: 15rem; height: 25rem; border-radius: 16px; box-shadow: 3px 3px #ccc;">
+				  <img src="../Assets/img/FormKeranjang/kursi.png" class="card-img-top" alt="...">
+					<div class="card-body">
+			    		<h4>
+			    			<strong>
+			    			LANGFJALL
+			    			</strong>
+			    		</h4>
+			    		<h5 style="color: #FFB600;">
+			    			Rp1.000.000,-
+						</h5>
+
+						<!-- h5 Style yang Rp2.000.000,- -->
+
+						<h5 class="h5-bottom">
+							Rp2.000.000,- 
+							<style>
+								.h5-bottom {
+									font-size: 14px; 
+									color: #D9D9D9; 
+									margin-bottom: 15px; 
+									text-decoration: line-through #D9D9D9;
+								}
+							</style>
+						</h5>
+
+						<!--Paragraf Style yang 18% OFF-->
+
+						<p class="p-right">
+							18% OFF
+							<style>
+								.p-right {
+									font-size: 14px; 
+									color: #FA0000; 
+									margin-top: -35px; 
+									margin-left: 7vw; 
+									font-family: "Poppins", sans-serif;
+								}
+							</style>
+						</p>
+
+					<!--Border Green Line-->	
+
+					<border name="green-line" class="green-line">
+					<style>
+						.green-line {
+							position: absolute;
+							width: 12vw;
+							height: 1vh;
+							background: #C4C4C4;
+							border-radius: 20px;
+						}
+					</style>
+
+					<!--Fill Border Green Line-->
+
+					<border name="fill-border" class="fill-border">
+					<style>
+						.fill-border {
+							position: absolute;
+							width: 9vw;
+							height: 1vh;
+							background: #0DD509;
+							border-radius: 20px;
+						}
+					</style>
+
+					<!--Ikon Bintang PRODUK-->
+
+					<input type="image" class="imgBintang" src="../Assets/img/FormKeranjang/ikon-bintang.jpg.png">
+					<style>
+						.imgBintang {
+							position: absolute;
+							width: 2vw; 
+							height: 4vh;
+							margin-left: 13.5vw;
+							margin-top: -40px;
+						}
+					</style>
+
+					<!--Ikon Add PRODUK-->
+
+					<input type="image" class="imgAdd" src="../Assets/img/FormKeranjang/ikon-add.jpg.png">
+					<style>
+						.imgAdd {
+							position: absolute;
+							width: 2vw; 
+							height: 4vh;
+							margin-left: 13.5vw;
+							margin-top: -10px;
+						}
+					</style>
+
+					<!--Label Stok PRODUK-->
+					
+						<label class="label-stok">Stok Tersedia</label>
+						<style>
+							.label-stok {
+								font-family: "Poppins", sans-serif; 
+								font-size: 15px; 
+								margin-top: 10px; 
+								font-style: italic;
+							}
+						</style>
+			    	</div>
+			    </div>
+			</div>
+    	</div>
+    </div><br><br>
+    <div class="container">
+    	<div class="d-grid gap-2 col-6 mx-auto">
+		  <form action="#" method="POST">
+		  <button class="btn btn-primary" type="submit" style="width: 500px;"><h2> Selengkapnya > </h2></button>
+		  </form>
+		</div>
+    </div><br><br>
+
+	<!-- Footer -->
+
+    <div class="footer" style="width: 100%; margin-left: -8.55vw;">
+    	<nav class="navbar navbar-dark" style="background: #01384F; width: 98.7vw; position: absolute;">
+		<div class="row">
+			<div class="col" style="color: white; text-align: left; margin-left: 16vw;">
+
+				<!--h4 Style Kiri-->
+
+				<h4 class="h4-left">Company</h4>
+				<style>
+					.h4-left {
+						font-family: "Poppins", sans-serif; 
+						margin-top: 24px; 
+						margin-bottom: 30px;
+					}
+				</style>
+
+				<!--h5 Style Kiri-->
+
+				<h5 class="h5-left" type="button">About Us</h5>
+				<h5 class="h5-left" type="button">Blog</h5>
+				<h5 class="h5-left" type="button">Careers</h5>
+				<h5 class="h5-left" type="button">Contact Us</h5>
+				<style>
+					.h5-left {
+						font-family: "Poppins", sans-serif; 
+						font-size: 15px; 
+						margin-bottom: 15px;
+					}
+				</style>
+			</div>
+			<div class="col" style="color: white; text-align: left; margin-left: 4vw;">
+
+				<!--h4 Style Kiri Tengah-->
+
+				<h4 class="h4-left-center">Support</h4>
+				<style>
+					.h4-left-center {
+						font-family: "Poppins", sans-serif; 
+						margin-top: 24px; 
+						margin-bottom: 30px;
+					}
+				</style>
+
+				<!--h5 Style Kiri Tengah-->
+
+				<h5 class="h5-left-center" type="button">Help Center</h5>
+				<h5 class="h5-left-center" type="button">Safety Center</h5>
+				<h5 class="h5-left-center" type="button">Community Guidelines</h5>
+				<style>
+					.h5-left-center {
+						font-family: "Poppins", sans-serif; 
+						font-size: 15px; 
+						margin-bottom: 15px;
+					}
+				</style>
+			</div>
+			<div class="col" style="color: white; text-align: left; margin-left: 4vw;">
+
+				<!--h4 Style Kanan Tengah-->
+
+				<h4 class="h4-right-center">Legal</h4>
+				<style>
+					.h4-right-center {
+						font-family: "Poppins", sans-serif; 
+						margin-top: 24px; 
+						margin-bottom: 30px;
+					}
+				</style>
+
+				<!--h5 Style Kanan Tengah-->
+
+				<h5 class="h5-right-center" type="button">Cookies Policy</h5>
+				<h5 class="h5-right-center" type="button">Privacy Policy</h5>
+				<h5 class="h5-right-center" type="button">Terms Of Service</h5>
+				<h5 class="h5-right-center" type="button">Law Enforcement</h5>
+				<style>
+					.h5-right-center {
+						font-family: "Poppins", sans-serif; 
+						font-size: 15px; 
+						margin-bottom: 15px;
+					}
+				</style>
+			</div>
+			<div class="col" style="color: white; text-align: left; margin-left: 4vw;">
+
+				<!--h4 Style Kanan-->
+
+				<h4 class="h4-right">Install App</h4>
+				<style>
+					.h4-right{
+						font-family: "Poppins", sans-serif; 
+						margin-top: 24px;
+					}
+				</style>
+				<img src="../Assets/img/FormKeranjang/googleplay.png" width="120px" style="margin-top: 12px;">
+				<img src="../Assets/img/FormKeranjang/appstore.png" width="105px" style="margin-left: 7px;">
+			</div>
+		</div>
+		</nav>
+    </div>
+</body>
+</html>
