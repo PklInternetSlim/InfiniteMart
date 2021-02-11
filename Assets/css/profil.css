@@ -1,0 +1,384 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.imgKeranjang {
+    width: 2vw; 
+    height: 5vh; 
+    position: absolute; 
+    margin-left: 71vw; 
+    margin-top: 3px; 
+    border: transparent;
+}
+.imgLogo {
+    width: 3vw; 
+    height: 6vh; 
+    position: absolute;
+}
+.imgKategori {
+    width: 1vw; 
+    height: 2vh; 
+    position: absolute; 
+    margin-left: 80px; 
+    margin-top: 3px;
+}
+.search {
+    position: absolute; 
+    border: transparent;
+    margin-left: 30vw; 
+    width: 33.5vw;
+    height: 6vh; 
+    background: linear-gradient(110.98deg, #9B43CA 0.31%, #3C74FF 47.99%, #61C0EE 79.47%, #6FDEE7 91.86%); 
+    border-radius: 10px; 
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.Search {
+    margin-left: 20px;
+    margin-top: 4px;
+    padding-left: 14px;
+    width: 28vw;
+    height: 4.8vh;
+    position: absolute;
+    border: transparent;
+    background: rgba(255, 255, 255, 0.4);;
+    border-radius: 20px;
+    color: white;
+}
+.Search::-webkit-input-placeholder {
+    color: white;
+}
+.signIn {
+    margin-top: 4px;
+    position: absolute;
+    width: 6vw;
+    height: 5vh;
+    background: rgba(14, 83, 140, 0.17);
+    border-radius: 8px;
+    border: transparent;
+    margin-left: 50vw;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: #0E538C;
+    transition: 0.3s;
+}
+.signIn:hover {
+    background: turquoise;
+}
+.signUp {
+    margin-top: 4px;
+    position: absolute;
+    width: 7vw;
+    height: 5vh;
+    background:#0E538C;
+    border-radius: 8px;
+    border: transparent;
+    margin-left: 56.5vw;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.signUp:hover {
+    background: turquoise;
+}
+.imgSearch {
+    width: 25px;
+    height: 30px;
+    margin-left: 30.5vw;
+    margin-top: 6px;
+}
+.ikon-search {
+    position: absolute;
+    margin-left: 5px;
+    margin-top: -10px;
+    width: 25px;
+    height: 30px;
+}
+.inputSearch {
+    margin-left: 35px;
+    margin-top: -11px;
+    padding-left: 12px;
+    width: 52rem;
+    height: 4.8vh;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    border: transparent;
+    background: transparent;
+    border-radius: 20px;
+    color: black;
+}
+.inputSearch::-webkit-input-placeholder {
+    font-weight: 500;
+    color: black;
+}
+.h4-left {
+    font-family: "Poppins", sans-serif; 
+    margin-top: 24px; 
+    margin-bottom: 30px;
+}
+.h5-left {
+    font-family: "Poppins", sans-serif; 
+    font-size: 15px; 
+    margin-bottom: 15px;
+}
+.h4-left-center {
+    font-family: "Poppins", sans-serif; 
+    margin-top: 24px; 
+    margin-bottom: 30px;
+}
+.h5-left-center {
+    font-family: "Poppins", sans-serif; 
+    font-size: 15px; 
+    margin-bottom: 15px;
+}
+.h4-right-center {
+    font-family: "Poppins", sans-serif; 
+    margin-top: 24px; 
+    margin-bottom: 30px;
+}
+.h5-right-center {
+    font-family: "Poppins", sans-serif; 
+    font-size: 15px; 
+    margin-bottom: 15px;
+}
+.h4-right{
+    font-family: "Poppins", sans-serif; 
+    margin-top: 24px;
+}
+.text-profil {
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: -12px;
+    margin-left: 15px;
+}
+h6 {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.icon-pencil {
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 8px;
+    width: 20px;
+    height: 18px;
+    color: white;
+    background: gray;
+    border: transparent;
+    border-radius: 30%;
+}
+.imgUser {
+    margin-top: -20px;
+}
+.anima5 {
+    margin-top: 80px;
+    margin-left: -15px;
+    width: 15vw;
+    height: 52vh;
+}
+.left-area {
+    margin-top: 100px; 
+    width: 15rem; 
+    height: 35rem; 
+    border-radius: 16px; 
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.right-area {
+    margin-top: 20px; 
+    width: 18rem; 
+    height: 22rem; 
+    margin-left: 280px; 
+    border-radius: 1px; 
+    border-top: transparent; 
+    border-left: 1px solid #000000; 
+    border-right: transparent; 
+    border-bottom: transparent;
+}
+.right-area-top {
+    margin-left: -20px; 
+    margin-top: 100px; 
+    width: 56.5rem; 
+    height: 3.5rem; 
+    border-bottom: 1px solid #C4C4C4; 
+    border-radius: 2px; 
+    border-top: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.right-area-bottom {
+    margin-left: -20px; 
+    margin-top: -0.5px; 
+    width: 56.5rem; 
+    height: 31.5rem; 
+    border-top: transparent; 
+    border-bottom-left-radius: 16px; 
+    border-bottom-right-radius: 16px; 
+    border-bottom: 1px solid #C4C4C4; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.user-left {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 3px;
+    color: lightskyblue;
+    font-family: "Poppins", sans-serif;
+}
+.store-left {
+    position: absolute;
+    margin-top: 40px;
+    color: lightskyblue;
+}
+.logout-left {
+    position: absolute;
+    margin-top: 75px;
+    color: lightskyblue;
+}
+.profile-card-left {
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 45px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.store-card-left {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 45px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.logout-card-left {
+    position: absolute;
+    margin-top: 73px;
+    margin-left: 45px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+h3 {
+    margin-top: 35px;
+    margin-left: 15px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+h2 {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+    margin-bottom: -7px;
+    margin-left: 30px;
+    text-align: left;
+}
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+.username{
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    margin-top: -30px;
+    margin-left: 170px;
+}
+.user-profil{
+    position: absolute;
+    margin-left: 57px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: lightskyblue;
+}
+.field-text {
+    position: absolute;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background: transparent;
+    padding-left: 4px;
+    box-sizing: border-box;
+    width: 380px;
+    margin-left: 170px;
+    margin-top: -30px;
+}
+.field-text2 {
+    position: absolute;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background: transparent;
+    padding-left: 4px;
+    box-sizing: border-box;
+    width: 180px;
+    margin-left: 170px;
+    margin-top: -30px;
+}
+.btn-save {
+    position: absolute;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background: linear-gradient(110.98deg, #9B43CA 0.31%, #3C74FF 47.99%, #61C0EE 79.47%, #6FDEE7 91.86%);
+    padding-left: 4px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    border: transparent;
+    width: 6vw;
+    height: 5vh;
+    margin-left: 170px;
+    margin-top: 25px;
+    color: white;
+    transition: 0.3s;
+}
+.btn-save:hover {
+    background: linear-gradient(-110.98deg, #9B43CA 0.31%, #3C74FF 47.99%, #61C0EE 79.47%, #6FDEE7 91.86%);
+}
+.bottom-area {
+    width: 100%; 
+    margin-top: 10vh;
+}
+.bottom-input {
+    position: absolute;
+    background: #01384F; 
+    width: 98.7vw; 
+}
+.left-input {
+    color: white; 
+    text-align: left; 
+    margin-left: 18vw;
+}
+.left-input-center {
+    color: white; 
+    text-align: left; 
+    margin-left: 4vw;
+}
+.right-input-center {
+    color: white; 
+    text-align: left; 
+    margin-left: 4vw;
+}
+.right-input {
+    color: white; 
+    text-align: left; 
+    margin-left: 3vw;
+}
+.icon-instagram {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -8.5vw;
+}
+.icon-twitter {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -5.2vw;
+}
+.icon-youtube {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -2vw;
+}
