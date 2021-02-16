@@ -16,52 +16,96 @@
 <body>
 
 	<!-- Container -->
-	<!-- Navigation Bar -->
+    <!-- * navbvar -->
+    <div class="blank"></div>
+    <nav class="navbar-home mt-3">
+        <div class="container">
+            <div class="row d-flex align-items-center ">
+                <div class="col-3 d-flex align-items-center collapse-nav-home">
+                    <a class="px-3" href="#">
+                        <img src="../Assets/img/logo_transparent.png" alt="InfiniteMart" class="user-select-none brand">
+                    </a>
+                    <img src="../Assets/img/icon/kategori-btn.png" alt="" class="user-select-none wrap-navbar-login">
+                    <span class="mx-3 category">Kategori</span>
+                </div>
+                <div class="col-md-6 wrap-navbar-login">
+                    <div class="row justify-content-center">
+                        <div class="col-11">
+                            <div class="searchBarWrap p-3">
+                                <input type="text" class="searchBar form-control img-fluid"
+                                    placeholder="Laper Pengen Seblak">
+                                <button class="btn mx-2">
+                                    <img src="../Assets/img/icon/ikon-search-btn.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-1 d-flex align-items-center">
+                            <img src="../Assets/img/icon/ikon-kẻanjang-btn.png" alt=""
+                                style="transform: translateX(100%);" class="user-select-none">
+                        </div>
+                    </div>
+                </div>
 
-	<div class="container">
-		<nav class="navbar fixed-top navbar-light bg-light">
-		  <div class="container-fluid">
+                <div class="col-3 wrap-navbar-login">
+                    <div class="row justify-content-end d-flex">
+                        <button class="btn btn-login">Login</button>&nbsp;&nbsp;
+                        <button class="btn btn-signup">Sign up</button>
+                    </div>
+                </div>
 
-			<!--Ikon Keranjang-->
+                <div class="col-md-3 wrap-navbar-collapse">
+                    <div class="row justify-content-end">
+                        <div class="col d-flex justify-content-end">
+                            <img src="../Assets/img/icon/bars.png" alt="" width="35px" class="user-select-none pointer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-			<img src="../Assets/img/FormProfil/ikon-kẻanjang-btn.png" class="imgKeranjang" type="button">
 
-			<!--Logo-->
-			
-			<img src="../Assets/img/FormProfil/logo_transparent.png" class="imgLogo">
-			
-			<!--Ikon Kategori-->
+    <!-- * Collapse Navbar -->
+    <nav class="collapse-navbar-home">
+        <div class="container">
+            <div class="wrap-collapse ">
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="searchBarWrap p-3">
+                            <input type="text" class="searchBar form-control img-fluid"
+                                placeholder="Laper Pengen Seblak">
+                            <button class="btn mx-2">
+                                <img src="../Assets/img/icon/ikon-search-btn.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-3">
+                        <img src="../Assets/img/icon/kategori-btn.png" alt="" class="user-select-none">
+                        <span class="mx-3 fw-bold">Kategori</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-3">
+                        <img src="../Assets/img/icon/ikon-kẻanjang-btn.png" alt="" class="user-select-none">
+                        <span class="mx-3 fw-bold">Keranjang</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-3">
+                        <button class="btn btn-login">Login</button>&nbsp;&nbsp;
+                        <button class="btn btn-signup">Sign up</button>
+                    </div>
+                </div>
+            </div>
 
-			<img src="../Assets/img/FormProfil/kategori-btn.png" class="imgKategori" type="button">
-			<a class="navbar-brand" style="margin-left: 100px;">Kategori</a>
+        </div>
+    </nav>
+    <!-- / collapse navbar -->
 
-			<!--Border Search-->
+    <!-- /navbar -->
 
-			<border name="search" class="search">
-
-			<!--Input Search-->
-
-			<input type="text" name="search" class="Search" placeholder="Masukkan kata kunci...">
-
-			<!--Button Login-->
-
-			<form action="#" method="POST">
-			<button type="submit" class="signIn">Login</button>
-			</form>
-
-			<!--Button Sign Up-->
-
-			<form action="#" method="POST">
-			<button type="submit" class="signUp">Sign Up</button>
-			</form>
-
-			<!--Ikon Search-->
-
-			<form action="#" method="POST">
-			<input type="image" src="../Assets/img/FormProfil/ikon-search-btn.png" class="imgSearch" type="button">
-			</form>
-		</nav>
-	</div>
 <div class="container">
     <div class="row">
         <div class="col">
@@ -140,36 +184,41 @@
         </div>    
     </div>  
 </div>
-<div class="footer bottom-area">
-    <nav class="navbar navbar-dark bottom-input">
-    <div class="row">
-        <div class="col left-input">
-            <h4 class="h4-left">Company</h4>
-            <h5 class="h5-left" type="button">About Us</h5>
-			<h5 class="h5-left" type="button">Blog</h5>
-			<h5 class="h5-left" type="button">Careers</h5>
-			<h5 class="h5-left" type="button">Contact Us</h5>    
+<div class="Footer mt-5 py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 text-center text-white">
+                <h3 class="mb-4">Company</h3>
+                <p>About Us</p>
+                <p>Blog</p>
+                <p>Careers</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="col-md-3 text-center text-white">
+                <h3 class="mb-4">Support</h3>
+                <p>Help Center</p>
+                <p>Safety Center</p>
+                <p>Community Guidelines</p>
+            </div>
+            <div class="col-md-3 text-center text-white">
+                <h3 class="mb-4">Legal</h3>
+                <p>Cookies Policy</p>
+                <p>Privacy Policy</p>
+                <p>Terms Of Serfice</p>
+                <p>Low Enforcement</p>
+            </div>
+            <div class="col-md-3 text-center text-white">
+                <h3 class="mb-4">Install App</h3>
+                <img src="../Assets/img/Home/Google-Play.png" class="GoodleApp-Store">
+                <img src="../Assets/img/Home/AppIos.png" class="GoodleApp-Store">
+                <div class="d-flex social-mediaIcon d-flex justify-content-center mt-3">
+                    <img src="../Assets/img/Home/Instagram.png" alt="">
+                    <img src="../Assets/img/Home/Twitter.png" alt="">
+                    <img src="../Assets/img/Home/Youtube.png" alt="">
+                </div>
+            </div>
+        </div>
     </div>
-        <div class="col left-input-center">
-            <h4 class="h4-left-center">Support</h4>
-            <h5 class="h5-left-center" type="button">Help Center</h5>
-			<h5 class="h5-left-center" type="button">Safety Center</h5>
-			<h5 class="h5-left-center" type="button">Community Guidelines</h5>
-    </div>
-        <div class="col right-input-center">
-            <h4 class="h4-right-center">Legal</h4>
-            <h5 class="h5-right-center" type="button">Cookies Policy</h5>
-			<h5 class="h5-right-center" type="button">Privacy Policy</h5>
-			<h5 class="h5-right-center" type="button">Terms of Service</h5>
-            <h5 class="h5-right-center" type="button">Law Enforcement</h5>
-    </div>
-        <div class="col right-input">
-            <h4 class="h4-right">Install App</h4>
-            <img src="../Assets/img/FormKeranjang/googleplay.png" width="120px" style="margin-top: 12px;">
-			<img src="../Assets/img/FormKeranjang/appstore.png" width="105px" style="margin-left: 7px;">
-            <i class="fab fa-instagram fa-2x icon-instagram" type="button"></i>
-            <i class="fab fa-twitter fa-2x icon-twitter" type="button"></i>
-            <i class="fab fa-youtube fa-2x icon-youtube" type="button"></i>
-    </div>
-</nav>
-</div>        
+</div>
+</body>
+</html>
