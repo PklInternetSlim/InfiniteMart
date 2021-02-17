@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Produk</title>
+    <link rel='stylesheet' href='../Assets/css/bootstrap.min.css'>
+    <link rel="icon" href="../Assets/img/logo_transparent.png">
+    <link rel="stylesheet" href="../Assets/css/TambahProduk.css">
+</head>
+<body>
+        <!-- * navbvar -->
+        <div class="blank"></div>
+        <nav class="navbar-home mt-3">
+            <div class="container">
+                <div class="row d-flex align-items-center ">
+                    <div class="col-3 d-flex align-items-center collapse-nav-home">
+                        <a class="px-3" href="#">
+                            <img src="../Assets/img/logo_transparent.png" alt="InfiniteMart" class="user-select-none brand">
+                        </a>
+                        <img src="../Assets/img/icon/kategori-btn.png" alt="" class="user-select-none wrap-navbar-login">
+                        <span class="mx-3 category">Kategori</span>
+                    </div>
+                    <div class="col-md-6 wrap-navbar-login">
+                        <div class="row justify-content-center">
+                            <div class="col-11">
+                                <div class="searchBarWrap p-3">
+                                    <input type="text" class="searchBar form-control img-fluid"
+                                        placeholder="Laper Pengen Seblak">
+                                    <button class="btn mx-2">
+                                        <img src="../Assets/img/icon/ikon-search-btn.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-1 d-flex align-items-center">
+                                <img src="../Assets/img/icon/ikon-kẻanjang-btn.png" alt=""
+                                    style="transform: translateX(100%);" class="user-select-none">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-3 wrap-navbar-login">
+                        <div class="row justify-content-end d-flex">
+                            <button class="btn btn-login">Login</button>&nbsp;&nbsp;
+                            <button class="btn btn-signup">Sign up</button>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3 wrap-navbar-collapse">
+                        <div class="row justify-content-end">
+                            <div class="col d-flex justify-content-end">
+                                <img src="../Assets/img/icon/bars.png" alt="" width="35px" class="user-select-none pointer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    
+    
+        <!-- * Collapse Navbar -->
+        <nav class="collapse-navbar-home">
+            <div class="container">
+                <div class="wrap-collapse ">
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="searchBarWrap p-3">
+                                <input type="text" class="searchBar form-control img-fluid"
+                                    placeholder="Laper Pengen Seblak">
+                                <button class="btn mx-2">
+                                    <img src="../Assets/img/icon/ikon-search-btn.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mt-3">
+                            <img src="../Assets/img/icon/kategori-btn.png" alt="" class="user-select-none">
+                            <span class="mx-3 fw-bold">Kategori</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mt-3">
+                            <img src="../Assets/img/icon/ikon-kẻanjang-btn.png" alt="" class="user-select-none">
+                            <span class="mx-3 fw-bold">Keranjang</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mt-3">
+                            <button class="btn btn-login">Login</button>&nbsp;&nbsp;
+                            <button class="btn btn-signup">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </nav>
+        <!-- / collapse navbar -->
+    
+        <!-- /navbar -->
+
+    <form action="#" method="POST">
+        <div class="container mt-5">
+            <div class="cardTambahProduk">
+                <div class="headerTambahProduk mt-3">
+                    <h5>Tambah Produk</h5>
+                </div>
+                <div class="contentTambahProduk">
+                    <p class="mt-3">Upload Gambar Produk</p>
+                    <div class="imgFlex">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="cardImgFlex">
+
+                                </div>
+                                <div class="footerCardImg mt-2">
+                                    <p class="text-center">Gambar Utama</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="cardImgFlex">
+                                    
+                                </div>
+                                <div class="footerCardImg mt-2">
+                                    <p class="text-center">Gambar 2</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="cardImgFlex">
+                                    
+                                </div>
+                                <div class="footerCardImg mt-2">
+                                    <p class="text-center">Gambar 3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="cardDetailProduk mt-4">
+                <div class="headerDetailProduk mt-3">
+                    <h5>Detail Produk</h5>
+                </div>
+                <div class="contentDetailProduk">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="inputValue d-flex flex-column mt-3">
+                                <label for="" class="mb-2">Nama Produk</label>
+                                <input type="text" class="form-control" name="NamaProduk" placeholder="Nama Produk">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="inputValue d-flex flex-column mt-3">
+                                <label for="" class="mb-2">User Di Izinkan</label>
+                                <select name="allowUser" class="form-select form-select mb-3" style="color: gray;">
+                                    <option selected>Izinkan User</option>
+                                    <option value="">User 1</option>
+                                    <option value="">User 2</option>
+                                    <option value="">User 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="inputValue d-flex flex-column mt-3">
+                                <label for="" class="mb-2">Deskripsi Produk</label>
+                                <textarea class="form-control" placeholder="Tuliskan Deskripsi Produk Anda" id="floatingTextarea2" style="height: 100px; resize: none;"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="inputValue d-flex flex-column mt-3">
+                                <label for="" class="mb-2">Harga Produk</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">Rp</span>
+                                    <input type="text" class="form-control" placeholder="Harga Produk" aria-label="Username" aria-describedby="basic-addon1" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="d-flex mt-3">
+                                <button type="submit" class="btn btn-primary" style="width: 15vw;">Upload</button>
+                                <button type="submit" class="btn btn-danger" style="width: 15vw; margin-left: 2.5vw;">Batal</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    
+        <!-- * Footer -->
+
+        <div class="Footer mt-5 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 text-center text-white">
+                        <h3 class="mb-4">Company</h3>
+                        <p>About Us</p>
+                        <p>Blog</p>
+                        <p>Careers</p>
+                        <p>Contact Us</p>
+                    </div>
+                    <div class="col-md-3 text-center text-white">
+                        <h3 class="mb-4">Support</h3>
+                        <p>Help Center</p>
+                        <p>Safety Center</p>
+                        <p>Community Guidelines</p>
+                    </div>
+                    <div class="col-md-3 text-center text-white">
+                        <h3 class="mb-4">Legal</h3>
+                        <p>Cookies Policy</p>
+                        <p>Privacy Policy</p>
+                        <p>Terms Of Serfice</p>
+                        <p>Low Enforcement</p>
+                    </div>
+                    <div class="col-md-3 text-center text-white">
+                        <h3 class="mb-4">Install App</h3>
+                        <img src="../Assets/img/Home/Google-Play.png" class="GoodleApp-Store">
+                        <img src="../Assets/img/Home/AppIos.png" class="GoodleApp-Store">
+                        <div class="d-flex social-mediaIcon d-flex justify-content-center mt-3">
+                            <img src="../Assets/img/Home/Instagram.png" alt="">
+                            <img src="../Assets/img/Home/Twitter.png" alt="">
+                            <img src="../Assets/img/Home/Youtube.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- /footer -->
+
+    <script src="../Assets/Js/popper.min.js" async defer></script>
+    <script src="../Assets/Js/bootstrap.min.js" async defer></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js" async defer></script>
+</body>
+</html>
