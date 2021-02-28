@@ -19,7 +19,7 @@
     />
     <script src="https://kit.fontawesome.com/d1a508a7c1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
-    <title>Total Produk</title>
+    <title>Pembayaran Berhasil</title>
 </head>
 <body>
     <div class="parentWrapper">
@@ -53,10 +53,10 @@
                 </li>
               </ul>
               
-              <ul class="sideNav-link activeBG mt-2">
+              <ul class="sideNav-link mt-2">
                 <li>
-                  <a class="nav-link activeColor" href="#">
-                    <i class="material-icons">content_paste</i>
+                  <a class="nav-link" href="#">
+                    <i class="material-icons totalOrderIcon">content_paste</i>
                     <p>Total Product</p>
                   </a>
                 </li>
@@ -80,10 +80,10 @@
                 </li>
               </ul>
               
-              <ul class="sideNav-link mt-2">
+              <ul class="sideNav-link activeBG mt-2">
                 <li>
-                  <a class="nav-link" href="#">
-                    <i class="material-icons trueIcon">donut_small</i>
+                  <a class="nav-link activeColor" href="#">
+                    <i class="material-icons">donut_small</i>
                     <p>Order Success</p>
                   </a>
                 </li>
@@ -136,7 +136,7 @@
             <div class="intoAdmin">
                 <div class="container">
                     <h1 class="text-white" style="margin-top: 10vh;">Hello, Happy Work</h1>
-                    <p class="mt-4 text-white" style="width: 50%;">This is your page to manage the data of all orders, be careful in deleting data</p>
+                    <p class="mt-4 text-white" style="width: 50%;">This is your page to manage the data for all successful orders, be careful in processing the data</p>
                 </div>
             </div>
             <div class="col-md-12">
@@ -151,9 +151,9 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Name</th>
-                                    <th>Item Code</th>
-                                    <th>Type</th>
+                                    <th>Order Number</th>
+                                    <th>Email</th>
+                                    <th>Order Name</th>
                                     <th>Total</th>
                                     <th>Aksi</th>
                                 </tr>
@@ -161,107 +161,17 @@
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Laptop</td>
-                                    <td>12398</td>
-                                    <td>Electronic</td>
-                                    <td>12 Unit</td>
+                                    <td>23423</td>
+                                    <td>Leonardo@gmail.com</td>
+                                    <td>Leonardo</td>
+                                    <td>Rp. 1.000.000</td>
                                     <td>
                                         <p style="display: none;"></p>
-                                        <button type="submit" class="btn-table" onclick="funDelete()">Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Kulkas</td>
-                                    <td>23808</td>
-                                    <td>Electronic</td>
-                                    <td>12 Unit</td>
-                                    <td>
-                                        <p style="display: none;"></p>
-                                        <button type="submit" class="btn-table" onclick="funDelete()">Delete</button>
+                                        <button type="submit" class="btn-table" onclick="orderDelete()">Delete</button>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="cardTableData mt-4">
-                                <div class="container">
-                                    <div class="headerSold d-felx flex-column mt-2">
-                                        <p>Advantage</p>
-                                        <h5 class="mt-2">Total Sold</h5>
-                                    </div>
-                                    <div class="contentSold mt-3">
-                                        <div id="chartSold">
-                    
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="cardTableData mt-4">
-                                <div class="container">
-                                    <div class="headerSold d-felx flex-column mt-2">
-                                        <p>Advantage</p>
-                                        <div class="d-flex justify-content-between">
-                                            <h5 class="mt-2">Most Ordered</h5>
-                                            <h5 class="mt-2">Month</h5>
-                                        </div>
-                                    </div>
-                                    <div class="contentSold mt-3">
-                                        <div id="chartSoldBar">
-                    
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="cardTableData mt-4">
-                        <div class="container">
-                            <div class="headerSold d-felx flex-column mt-2">
-                                <p>Capacity</p>
-                                <h5 class="mt-2">Quantity Available</h5>
-                            </div>
-                            <div class="contentSold">
-                                <div id="contentTable">
-                                    <table border="0" id="TableOrder-2" class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>Name</th>
-                                                <th>Available</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                    <td>Laptop</td>
-                                                    <td>12 Unit</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Kulkas</td>
-                                                    <td>12 Unit</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Televisi</td>
-                                                    <td>12 Unit</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Ac</td>
-                                                    <td>12 Unit</td>
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -279,7 +189,7 @@
             
         </div>
         
-          <div class="bgBlue-Total_Produk"></div>
+          <div class="bgBlue-Order_Success"></div>
   
           </div>
         </div>
@@ -294,6 +204,6 @@
         <script src="../Assets/Js/apexcharts.min.js"></script>
         <script src="../Assets/Js/sweetalert2.all.min.js"></script>
         <script src="../Assets/Js/NavbarAdmin.js"></script>
-        <script src="../Assets/Js/TotalProduk.js"></script>
+        <script src="../Assets/Js/PembayaranGagal.js"></script>
       </body>
   </html>

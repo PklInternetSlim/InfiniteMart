@@ -567,8 +567,8 @@ body {
 #TableOrder-2_filter label input {
   margin-top: 10px;
   position: absolute;
-  left: -7px;
-  top: 0;
+  left: 27px;
+  top: 12.5vh;
 }
 
 #TableOrder_info {
@@ -787,6 +787,7 @@ body {
 }
 
 .cardTableData {
+  position: relative;
   width: 100%;
   padding: 10px;
   border-radius: 10px;
