@@ -8,10 +8,10 @@ Implementasi 6 Mockup
 
 - User Page : Selesai && Responsive
 - Detail Produk Page : Selesai && Responsive
-- Keranjang Page : Belum Selesai
-- Search page : Belum Selesai
-- Profile page : Belum selesai
-- Tambah Barang page : belum selesai
+- Keranjang Page : Selesai
+- Search page : Selesai
+- Profile page : selesai
+- Tambah Barang page : selesai
 
 ### Kalau Ingin Mengumpulkan
 
